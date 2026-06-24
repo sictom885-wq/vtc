@@ -25,7 +25,7 @@ include 'includes/header.php';
     <div class="container">
       <div class="apropos-inner">
         <div class="apropos-img-wrap reveal">
-          <img src="/assets/images/michel-richard.jpg"
+          <img src="/assets/images/chauffeur-hero.webp"
                alt="Michel Richard, chauffeur privé AUDE VTC Carcassonne"
                width="540" height="680" loading="lazy"
                style="border-radius:var(--radius-lg);width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--noir-3);">

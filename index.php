@@ -157,7 +157,7 @@ include 'includes/header.php';
   <div class="container">
     <div class="apropos-inner">
       <div class="apropos-img-wrap reveal">
-        <img src="/assets/images/chauffeur-mercedes.jpg"
+        <img src="/assets/images/chauffeur-hero.webp"
              alt="Michel Richard, chauffeur AUDE VTC devant sa Mercedes hybride"
              width="540" height="680" loading="lazy">
         <div class="apropos-badge">
@@ -224,7 +224,7 @@ include 'includes/header.php';
       <!-- Aéroports -->
       <div class="presta-card reveal reveal-delay-1">
         <div class="presta-img">
-          <img src="/assets/images/aeroport.jpg" alt="Transfert aéroport VTC Carcassonne" width="400" height="225" loading="lazy">
+          <img src="/assets/images/aeroport.webp" alt="Transfert aéroport VTC Carcassonne" width="400" height="225" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
@@ -249,7 +249,7 @@ include 'includes/header.php';
       <!-- Gares -->
       <div class="presta-card reveal reveal-delay-2">
         <div class="presta-img">
-          <img src="/assets/images/gare.jpg" alt="Transfert gare VTC Carcassonne" width="400" height="225" loading="lazy">
+          <img src="/assets/images/gare.webp" alt="Transfert gare VTC Carcassonne" width="400" height="225" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
@@ -273,7 +273,7 @@ include 'includes/header.php';
       <!-- Tourisme & Événements -->
       <div class="presta-card reveal reveal-delay-3">
         <div class="presta-img">
-          <img src="/assets/images/tourisme.jpg" alt="Tourisme Occitanie VTC privé" width="400" height="225" loading="lazy">
+          <img src="/assets/images/tourisme.webp" alt="Tourisme Occitanie VTC privé" width="400" height="225" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">

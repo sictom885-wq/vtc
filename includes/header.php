@@ -66,7 +66,7 @@ $prefix = ($lang === 'fr') ? '' : $lang . '/';
   <meta property="og:description" content="<?= htmlspecialchars($desc) ?>">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="<?= htmlspecialchars($canonical) ?>">
-  <meta property="og:image"       content="https://www.audevtc.fr/assets/images/og-image.jpg">
+  <meta property="og:image"       content="https://www.audevtc.fr/assets/images/og-image.webp">
 
   <!-- Schema.org LocalBusiness -->
   <script type="application/ld+json">

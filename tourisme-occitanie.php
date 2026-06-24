@@ -13,28 +13,28 @@ $circuits = [
     'titre'  => 'La Cité de Carcassonne',
     'duree'  => '3 à 4 heures',
     'desc'   => 'Visite de la plus grande forteresse médiévale d\'Europe. Remparts, château comtal, basilique Saint-Nazaire. Votre chauffeur vous partage l\'histoire de la région.',
-    'img'    => '/assets/images/carcassonne-cite.jpg',
+    'img'    => '/assets/images/carcassonne-cite.webp',
     'tarif'  => 'À partir de 80€',
   ],
   [
     'titre'  => 'Canal du Midi & Écluses',
     'duree'  => 'Demi-journée',
     'desc'   => 'Balade le long du canal classé UNESCO depuis Carcassonne jusqu\'à Castelnaudary. Découvrez les écluses, les villages de bord de canal et les pénichettes.',
-    'img'    => '/assets/images/canal-midi.jpg',
+    'img'    => '/assets/images/tourisme.webp',
     'tarif'  => 'À partir de 120€',
   ],
   [
     'titre'  => 'Vignobles du Languedoc',
     'duree'  => 'Journée',
     'desc'   => 'Circuit œnotouristique dans les Corbières et le Minervois. Visites de domaines, dégustations, rencontres avec les vignerons. Vous rentrez sereinement.',
-    'img'    => '/assets/images/vignobles.jpg',
+    'img'    => '/assets/images/carcassonne-nuit2.webp',
     'tarif'  => 'À partir de 220€',
   ],
   [
     'titre'  => 'Pays Cathare',
     'duree'  => 'Journée',
     'desc'   => 'Châteaux cathares de Montségur, Peyrepertuse, Quéribus — des forteresses perchées au-dessus des gorges. Une plongée dans l\'histoire médiévale d\'Occitanie.',
-    'img'    => '/assets/images/pays-cathare.jpg',
+    'img'    => '/assets/images/carcassonne-nuit2.webp',
     'tarif'  => 'À partir de 250€',
   ],
 ];
@@ -43,7 +43,7 @@ $circuits = [
 <main style="padding-top:160px;">
 
   <section style="position:relative;padding:var(--s12) 0;background:var(--noir-2);overflow:hidden;">
-    <div style="position:absolute;inset:0;background:url('/assets/images/occitanie-hero.jpg') center/cover no-repeat;opacity:.2;"></div>
+    <div style="position:absolute;inset:0;background:url('/assets/images/occitanie-hero.webp') center/cover no-repeat;opacity:.2;"></div>
     <div class="container" style="position:relative;">
       <span class="eyebrow">Nos Prestations</span>
       <span class="gold-line"></span>

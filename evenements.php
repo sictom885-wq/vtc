@@ -12,7 +12,7 @@ include 'includes/header.php';
 <main style="padding-top:160px;">
 
   <section style="position:relative;padding:var(--s12) 0;background:var(--noir-2);overflow:hidden;">
-    <div style="position:absolute;inset:0;background:url('/assets/images/evenement-hero.jpg') center/cover no-repeat;opacity:.15;"></div>
+    <div style="position:absolute;inset:0;background:url('/assets/images/chauffeur-hero.webp') center/cover no-repeat;opacity:.15;"></div>
     <div class="container" style="position:relative;">
       <span class="eyebrow">Nos Prestations</span>
       <span class="gold-line"></span>
