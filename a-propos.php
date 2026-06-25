@@ -12,12 +12,23 @@ include 'includes/icons.php';
 
 <main style="padding-top:160px;">
 
-  <section style="padding:var(--s12) 0 var(--s8);background:var(--noir-2);">
-    <div class="container">
+  <!-- HERO PHOTO -->
+  <section style="position:relative;height:520px;overflow:hidden;display:flex;align-items:center;">
+    <!-- Photo pleine largeur -->
+    <img src="/assets/images/chauffeur-apropos.webp"
+         alt="Chauffeur privé AUDE VTC ouvrant la portière"
+         width="1920" height="640"
+         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+    <!-- Overlay dégradé noir -->
+    <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,8,16,.85) 0%,rgba(8,8,16,.55) 55%,rgba(8,8,16,.25) 100%);"></div>
+    <!-- Ligne or bas -->
+    <div style="position:absolute;bottom:0;left:0;right:0;height:1px;background:linear-gradient(to right,rgba(201,168,76,.5),rgba(201,168,76,.1));"></div>
+    <!-- Contenu -->
+    <div class="container" style="position:relative;z-index:2;">
       <span class="eyebrow">Qui sommes-nous</span>
       <span class="gold-line"></span>
-      <h1 class="section-title">À Propos <span>d'AUDE VTC</span></h1>
-      <p class="lead">Derrière AUDE VTC, un homme, une passion : vous faire découvrir l'Occitanie dans les meilleures conditions.</p>
+      <h1 class="section-title" style="font-size:clamp(2.4rem,5vw,4rem);max-width:600px;">À Propos <span>d'AUDE VTC</span></h1>
+      <p class="lead" style="max-width:480px;margin-top:var(--s2);">Derrière AUDE VTC, un homme, une passion : vous faire découvrir l'Occitanie dans les meilleures conditions.</p>
     </div>
   </section>
 
