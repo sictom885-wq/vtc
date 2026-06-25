@@ -13,12 +13,7 @@ include 'includes/icons.php';
 <main style="padding-top:160px;overflow-x:hidden;">
 
   <!-- HERO PHOTO -->
-  <section style="position:relative;height:520px;overflow:hidden;display:flex;align-items:center;">
-    <!-- Photo pleine largeur -->
-    <img src="/assets/images/chauffeur-apropos.webp"
-         alt="Chauffeur privé AUDE VTC ouvrant la portière"
-         width="1920" height="640"
-         style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+  <section style="position:relative;height:520px;overflow:hidden;display:flex;align-items:center;background:url('/assets/images/chauffeur-apropos.webp') center 30% / cover no-repeat;">
     <!-- Overlay dégradé noir -->
     <div style="position:absolute;inset:0;background:linear-gradient(to right,rgba(8,8,16,.85) 0%,rgba(8,8,16,.55) 55%,rgba(8,8,16,.25) 100%);"></div>
     <!-- Ligne or bas -->
