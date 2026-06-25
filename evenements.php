@@ -7,6 +7,7 @@ $meta = [
   'canonical' => 'https://www.audevtc.fr/evenements.php',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 ?>
 
 <main style="padding-top:160px;">
@@ -43,7 +44,7 @@ include 'includes/header.php';
         foreach($events as $i => $e): ?>
         <div class="presta-card reveal reveal-delay-<?= $i+1 ?>">
           <div class="presta-body">
-            <div class="presta-icon">
+            <div class="icon-box">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $e['icon'] ?>"/></svg>
             </div>
             <h3 class="presta-title"><?= $e['t'] ?></h3>

@@ -7,6 +7,7 @@ $meta = [
   'canonical' => 'https://www.audevtc.fr/transferts-aeroport.php',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 
 $aeroports = [
   ['nom' => 'Toulouse Blagnac', 'code' => 'TLS', 'dist' => '~85 km', 'duree' => '~1h', 'tarif' => 'À partir de 95€'],
@@ -46,7 +47,7 @@ $aeroports = [
         foreach($avantages as $a): ?>
         <div class="presta-card reveal" style="padding:0;">
           <div class="presta-body">
-            <div class="presta-icon">
+            <div class="icon-box">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $a['icon'] ?>"/></svg>
             </div>
             <h3 class="presta-title" style="font-size:1.2rem;"><?= $a['titre'] ?></h3>

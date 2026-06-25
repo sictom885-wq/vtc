@@ -7,6 +7,7 @@ $meta = [
   'canonical' => 'https://www.audevtc.fr/transferts-gare.php',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 
 $gares = [
   ['nom'=>'Carcassonne',    'dist'=>'~3 km',   'duree'=>'~5 min',  'tarif'=>'À partir de 20€'],
@@ -51,8 +52,8 @@ $gares = [
           ['n'=>'04','t'=>'En route','d'=>'Mercedes climatisée, chargeur à bord, trajet sans surprise.'],
         ];
         foreach($steps as $s): ?>
-        <div class="reveal" style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s4);">
-          <div style="font-family:var(--font-display);font-size:2.5rem;font-weight:700;color:rgba(201,168,76,.2);line-height:1;margin-bottom:var(--s2);"><?= $s['n'] ?></div>
+        <div class="step-card reveal" >
+          <div class="step-num"><?= $s['n'] ?></div>
           <h3 style="font-size:1rem;font-weight:600;color:var(--blanc);margin-bottom:var(--s1);"><?= $s['t'] ?></h3>
           <p style="font-size:.85rem;color:var(--gris-1);"><?= $s['d'] ?></p>
         </div>

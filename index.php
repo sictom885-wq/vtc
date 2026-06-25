@@ -7,6 +7,7 @@ $meta = [
   'canonical' => 'https://www.audevtc.fr/',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 ?>
 
 <!-- ==================== HERO ==================== -->
@@ -176,28 +177,28 @@ include 'includes/header.php';
 
         <div class="apropos-features">
           <div class="feat-item">
-            <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             <div class="feat-text">
               <strong>Tarif fixe, sans surprise</strong>
               <span>Prix connu à la réservation, quelles que soient les conditions de trafic</span>
             </div>
           </div>
           <div class="feat-item">
-            <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             <div class="feat-text">
               <strong>Disponible 24h/7j</strong>
               <span>Vols tôt, trains tardifs, événements nocturnes — nous sommes là</span>
             </div>
           </div>
           <div class="feat-item">
-            <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+            <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
             <div class="feat-text">
               <strong>Trilingue FR · EN · DE</strong>
               <span>Un accueil personnalisé pour chaque voyageur, quelle que soit sa nationalité</span>
             </div>
           </div>
           <div class="feat-item">
-            <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M5 17H3v-4M2 5h11l4 4h3l2 2v6h-2"/><path d="M5 13V5h9"/></svg>
+            <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0"/><path d="M5 17H3v-4M2 5h11l4 4h3l2 2v6h-2"/><path d="M5 13V5h9"/></svg>
             <div class="feat-text">
               <strong>Mercedes Break Hybride</strong>
               <span>Confort premium, spacieux, climatisé — vos bagages voyagent avec vous</span>
@@ -228,7 +229,7 @@ include 'includes/header.php';
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
-          <div class="presta-icon">
+          <div class="icon-box">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21 4 19 4c-1 0-1.5.5-3.5 2.5L8 8 1.2 6.2C.7 6.1.3 6.6.5 7.1l2 5.3a1 1 0 0 0 .7.6l4.3 1-1 3.3a1 1 0 0 0 1.3 1.3l3.3-1 1 4.3a1 1 0 0 0 .6.7l5.3 2c.5.2 1-.2.9-.7Z"/></svg>
           </div>
           <h3 class="presta-title">Transferts Aéroports</h3>
@@ -253,7 +254,7 @@ include 'includes/header.php';
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
-          <div class="presta-icon">
+          <div class="icon-box">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><path d="m8 19-2 3"/><path d="m18 22-2-3"/><path d="M8 15h.01"/><path d="M16 15h.01"/></svg>
           </div>
           <h3 class="presta-title">Transferts Gares</h3>
@@ -277,7 +278,7 @@ include 'includes/header.php';
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
-          <div class="presta-icon">
+          <div class="icon-box">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
           <h3 class="presta-title">Tourisme & Événements</h3>

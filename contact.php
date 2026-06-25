@@ -57,6 +57,7 @@ $meta = [
   'canonical' => 'https://www.audevtc.fr/contact.php',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 ?>
 
 <main style="padding-top:160px;">
@@ -82,28 +83,28 @@ include 'includes/header.php';
 
           <div style="display:flex;flex-direction:column;gap:var(--s3);">
             <div class="feat-item">
-              <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.8h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 18z"/></svg>
+              <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.8h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 18z"/></svg>
               <div class="feat-text">
                 <strong>Téléphone</strong>
                 <span><a href="tel:+33610082007" style="color:var(--gris-1);">06 10 08 20 07</a></span>
               </div>
             </div>
             <div class="feat-item">
-              <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
               <div class="feat-text">
                 <strong>Email</strong>
                 <span><a href="mailto:contact@audevtc.fr" style="color:var(--gris-1);">contact@audevtc.fr</a></span>
               </div>
             </div>
             <div class="feat-item">
-              <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
               <div class="feat-text">
                 <strong>Zone de service</strong>
                 <span>Carcassonne, Castelnaudary & toute l'Occitanie</span>
               </div>
             </div>
             <div class="feat-item">
-              <svg class="feat-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <svg class="icon-or" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
               <div class="feat-text">
                 <strong>Disponibilité</strong>
                 <span>24h/24 · 7j/7 · 365j/an</span>

@@ -7,6 +7,7 @@ $meta = [
   'canonical' => 'https://www.audevtc.fr/a-propos.php',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 ?>
 
 <main style="padding-top:160px;">

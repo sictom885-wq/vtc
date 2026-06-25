@@ -6,6 +6,7 @@ $meta = [
   'desc'  => 'Cette page n\'existe pas. Retournez à l\'accueil AUDE VTC.',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 ?>
 <main style="padding-top:160px;min-height:70vh;display:flex;align-items:center;">
   <div class="container" style="text-align:center;">

@@ -742,16 +742,27 @@ body:not(.scrolled-past-topbar) #header {
   flex-direction: column;
 }
 
-.presta-icon {
+.presta-icon,
+.icon-box {
   width: 44px;
   height: 44px;
-  background: rgba(201,168,76,.1);
+  background: rgba(201,168,76,.12);
+  border: 1px solid rgba(201,168,76,.2);
   border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--or);
   margin-bottom: var(--s2);
+  flex-shrink: 0;
+  transition: background var(--transition), border-color var(--transition);
+}
+
+.presta-card:hover .presta-icon,
+.avantage-item:hover .icon-box,
+.presta-card:hover .icon-box {
+  background: rgba(201,168,76,.22);
+  border-color: rgba(201,168,76,.4);
 }
 
 .presta-title {
@@ -1169,4 +1180,145 @@ body:not(.scrolled-past-topbar) #header {
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
   #cta-float { animation: none; }
+}
+
+/* ===== ICÔNES STANDARDISÉES OR ===== */
+.icon-or {
+  color: var(--or);
+  flex-shrink: 0;
+}
+
+/* Feature items avec icône box */
+.feat-item .feat-icon,
+.feat-item svg {
+  color: var(--or);
+}
+
+/* Cards avantages pages services */
+.avantage-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s3);
+  padding: var(--s4);
+  background: var(--noir-2);
+  border: 1px solid rgba(201,168,76,.12);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition);
+}
+
+.avantage-item:hover {
+  border-color: rgba(201,168,76,.35);
+}
+
+.avantage-item .icon-box {
+  margin-top: 2px;
+}
+
+.avantage-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--blanc);
+  margin-bottom: 4px;
+}
+
+.avantage-item p {
+  font-size: .85rem;
+  color: var(--gris-1);
+  line-height: 1.6;
+}
+
+/* Steps numérotés */
+.step-card {
+  background: var(--noir-2);
+  border: 1px solid rgba(201,168,76,.1);
+  border-radius: var(--radius-lg);
+  padding: var(--s4);
+  transition: border-color var(--transition);
+}
+
+.step-card:hover {
+  border-color: rgba(201,168,76,.35);
+}
+
+.step-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(201,168,76,.2);
+  line-height: 1;
+  margin-bottom: var(--s2);
+}
+
+.step-card h3 {
+  font-size: .95rem;
+  font-weight: 600;
+  color: var(--blanc);
+  margin-bottom: 4px;
+}
+
+.step-card p {
+  font-size: .82rem;
+  color: var(--gris-1);
+}
+
+/* Listes avec puce or */
+.list-or {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-or li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .88rem;
+  color: var(--gris-1);
+}
+
+.list-or li::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: var(--or);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Contact info items */
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  padding: var(--s2) 0;
+  border-bottom: 1px solid rgba(201,168,76,.08);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+}
+
+.contact-item .icon-box {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--blanc);
+  margin-bottom: 2px;
+}
+
+.contact-item span, .contact-item a {
+  font-size: .82rem;
+  color: var(--gris-1);
+  transition: color var(--transition);
+}
+
+.contact-item a:hover {
+  color: var(--or);
 }

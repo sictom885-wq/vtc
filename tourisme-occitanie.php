@@ -7,6 +7,7 @@ $meta = [
   'canonical' => 'https://www.audevtc.fr/tourisme-occitanie.php',
 ];
 include 'includes/header.php';
+include 'includes/icons.php';
 
 $circuits = [
   [
