@@ -192,18 +192,100 @@ include 'includes/icons.php';
         <p class="lead" style="margin-inline:auto;">Spacieux, silencieux, climatisé. Conçu pour le confort de 1 à 4 passagers avec leurs bagages.</p>
       </div>
 
-      <!-- Galerie photos -->
-      <div style="display:grid;grid-template-columns:2fr 1fr;grid-template-rows:auto auto;gap:var(--s2);margin-bottom:var(--s6);">
-        <div class="reveal" style="grid-row:1/3;border-radius:var(--radius-lg);overflow:hidden;">
-          <img src="/assets/images/mercedes-e.webp" alt="Mercedes Break AUDE VTC extérieur" width="800" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <div class="reveal reveal-delay-1" style="border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;">
-          <img src="/assets/images/mercedes-e-detail.webp" alt="Mercedes Break AUDE VTC détail extérieur" width="400" height="300" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <div class="reveal reveal-delay-2" style="border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;">
-          <img src="/assets/images/mercedes-v-detail.webp" alt="Mercedes Break AUDE VTC intérieur" width="400" height="300" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
+      <!-- Galerie Bento premium -->
+      <div class="bento" style="margin-bottom:var(--s6);">
+        <figure class="bento-tile bento-tile--hero reveal" data-tilt>
+          <div class="bento-tile__media">
+            <img src="/assets/images/fleet-berline-profil.webp" width="1686" height="933"
+                 alt="Berline noire de chauffeur privé devant la Gare de Bordeaux Saint-Jean de nuit"
+                 loading="lazy" decoding="async">
+          </div>
+          <figcaption class="bento-tile__cap">
+            <span class="bento-tile__kicker">Berline · 1 à 4 passagers</span>
+            <span class="bento-tile__line">Silence feutré, finitions soignées</span>
+          </figcaption>
+        </figure>
+
+        <figure class="bento-tile bento-tile--tall reveal reveal-delay-1" data-tilt>
+          <div class="bento-tile__media">
+            <img src="/assets/images/fleet-berline-avant.webp" width="1570" height="1001"
+                 alt="Berline noire de prestige devant l'entrée d'un hôtel de luxe"
+                 loading="lazy" decoding="async">
+          </div>
+          <figcaption class="bento-tile__cap">
+            <span class="bento-tile__kicker">Élégance</span>
+            <span class="bento-tile__line">Une présence discrète</span>
+          </figcaption>
+        </figure>
+
+        <figure class="bento-tile bento-tile--wide reveal reveal-delay-2" data-tilt>
+          <div class="bento-tile__media">
+            <img src="/assets/images/fleet-van.webp" width="1615" height="974"
+                 alt="Van noir spacieux pour transferts de groupe lors d'une soirée de gala"
+                 loading="lazy" decoding="async">
+          </div>
+          <figcaption class="bento-tile__cap">
+            <span class="bento-tile__kicker">Van · groupes &amp; bagages</span>
+            <span class="bento-tile__line">L'espace en plus, sans compromis</span>
+          </figcaption>
+        </figure>
       </div>
+
+      <style>
+        .bento{max-width:1180px;margin-inline:auto;display:grid;gap:var(--s2);
+          grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,minmax(220px,1fr));
+          grid-template-areas:"hero hero tall" "hero hero wide"}
+        .bento-tile--hero{grid-area:hero}
+        .bento-tile--tall{grid-area:tall}
+        .bento-tile--wide{grid-area:wide}
+        .bento-tile{position:relative;margin:0;border-radius:var(--radius-lg);overflow:hidden;
+          background:#141416;cursor:pointer;transform-style:preserve-3d;perspective:900px;
+          transition:transform .6s cubic-bezier(.16,1,.3,1)}
+        .bento-tile::after{content:"";position:absolute;inset:0;border-radius:var(--radius-lg);
+          box-shadow:inset 0 0 0 1px rgba(201,168,76,0);transition:box-shadow .5s ease;pointer-events:none;z-index:3}
+        .bento-tile:hover::after{box-shadow:inset 0 0 0 1px rgba(201,168,76,.55)}
+        .bento-tile__media{position:absolute;inset:0;overflow:hidden}
+        .bento-tile__media img{width:100%;height:100%;object-fit:cover;display:block;
+          transform:scale(1.04);filter:brightness(.82) saturate(.95);
+          transition:transform 1.1s cubic-bezier(.16,1,.3,1),filter .6s ease}
+        .bento-tile:hover .bento-tile__media img{transform:scale(1.1);filter:brightness(1) saturate(1.05)}
+        .bento-tile__media::before{content:"";position:absolute;inset:0;z-index:2;
+          background:linear-gradient(to top,rgba(8,8,16,.92) 0%,rgba(8,8,16,.25) 45%,transparent 75%),radial-gradient(120% 90% at 50% 120%,rgba(201,168,76,0),transparent 60%);
+          transition:background .6s ease}
+        .bento-tile:hover .bento-tile__media::before{
+          background:linear-gradient(to top,rgba(8,8,16,.9) 0%,rgba(8,8,16,.2) 45%,transparent 75%),radial-gradient(120% 90% at 50% 120%,rgba(201,168,76,.22),transparent 60%)}
+        .bento-tile__cap{position:absolute;left:0;right:0;bottom:0;z-index:4;padding:1.4rem 1.5rem;transform:translateZ(40px)}
+        .bento-tile__kicker{display:block;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--or);margin-bottom:.4rem}
+        .bento-tile__line{display:block;font-family:var(--font-display,"Cormorant Garamond",serif);font-size:1.35rem;font-weight:500;line-height:1.2;color:#fff;opacity:.92;transition:opacity .4s ease}
+        .bento-tile--hero .bento-tile__line{font-size:1.7rem}
+        .bento-tile:hover .bento-tile__line{opacity:1}
+        @media (max-width:880px){
+          .bento{grid-template-columns:1fr 1fr;grid-template-rows:auto;grid-template-areas:"hero hero" "tall wide"}
+          .bento-tile--hero{aspect-ratio:16/9}.bento-tile--tall,.bento-tile--wide{aspect-ratio:3/2}}
+        @media (max-width:560px){
+          .bento{grid-template-columns:1fr;grid-template-areas:"hero" "tall" "wide"}
+          .bento-tile{aspect-ratio:16/10}}
+        @media (prefers-reduced-motion:reduce){
+          .bento-tile,.bento-tile__media img,.bento-tile__media::before,.bento-tile::after{transition:none!important}
+          .bento-tile{transform:none!important}}
+      </style>
+      <script>
+        (() => {
+          const tiles=document.querySelectorAll('.bento .bento-tile');
+          if(matchMedia('(prefers-reduced-motion: reduce)').matches||!matchMedia('(pointer:fine)').matches)return;
+          const MAX=6;
+          tiles.forEach(tile=>{
+            let raf;
+            tile.addEventListener('pointermove',ev=>{
+              const r=tile.getBoundingClientRect();
+              const px=(ev.clientX-r.left)/r.width-.5, py=(ev.clientY-r.top)/r.height-.5;
+              cancelAnimationFrame(raf);
+              raf=requestAnimationFrame(()=>{tile.style.transform=`rotateX(${(-py*MAX).toFixed(2)}deg) rotateY(${(px*MAX).toFixed(2)}deg)`});
+            });
+            tile.addEventListener('pointerleave',()=>{cancelAnimationFrame(raf);tile.style.transform=''});
+          });
+        })();
+      </script>
 
       <!-- Specs -->
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);">
