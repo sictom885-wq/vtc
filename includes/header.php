@@ -48,7 +48,7 @@ $nav = [
   ],
 ];
 
-$t = $nav[$lang] ?? $nav['fr'];
+$nav_labels = $nav[$lang] ?? $nav['fr'];
 
 /* Préfixes URL par langue */
 $prefix = ($lang === 'fr') ? '' : $lang . '/';
@@ -110,17 +110,17 @@ $prefix = ($lang === 'fr') ? '' : $lang . '/';
 <div id="topbar">
   <div class="container">
     <div class="topbar-info">
-      <a href="mailto:<?= $t['email'] ?>" class="topbar-email">
+      <a href="mailto:<?= $nav_labels['email'] ?>" class="topbar-email">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        <?= htmlspecialchars($t['email']) ?>
+        <?= htmlspecialchars($nav_labels['email']) ?>
       </a>
       <a href="tel:+33610082007">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.8h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 18z"/></svg>
-        <?= htmlspecialchars($t['tel']) ?>
+        <?= htmlspecialchars($nav_labels['tel']) ?>
       </a>
       <span style="display:flex;align-items:center;gap:6px;color:var(--noir);opacity:.7;">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        <?= htmlspecialchars($t['zone']) ?>
+        <?= htmlspecialchars($nav_labels['zone']) ?>
       </span>
     </div>
 
@@ -150,15 +150,15 @@ $prefix = ($lang === 'fr') ? '' : $lang . '/';
       </a>
 
       <nav class="nav-menu" aria-label="Navigation principale">
-        <a href="/<?= $prefix ?>a-propos.php"     class="<?= $page==='apropos'?'active':'' ?>"><?= $t['apropos'] ?></a>
-        <a href="/<?= $prefix ?>prestations.php"  class="<?= $page==='prestations'?'active':'' ?>"><?= $t['prestations'] ?></a>
-        <a href="/<?= $prefix ?>tarifs.php"       class="<?= $page==='tarifs'?'active':'' ?>"><?= $t['tarifs'] ?></a>
-        <a href="/<?= $prefix ?>contact.php"      class="<?= $page==='contact'?'active':'' ?>"><?= $t['contact'] ?></a>
+        <a href="/<?= $prefix ?>a-propos.php"     class="<?= $page==='apropos'?'active':'' ?>"><?= $nav_labels['apropos'] ?></a>
+        <a href="/<?= $prefix ?>prestations.php"  class="<?= $page==='prestations'?'active':'' ?>"><?= $nav_labels['prestations'] ?></a>
+        <a href="/<?= $prefix ?>tarifs.php"       class="<?= $page==='tarifs'?'active':'' ?>"><?= $nav_labels['tarifs'] ?></a>
+        <a href="/<?= $prefix ?>contact.php"      class="<?= $page==='contact'?'active':'' ?>"><?= $nav_labels['contact'] ?></a>
       </nav>
 
       <a href="tel:+33610082007" class="btn-header">
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.6 2.8h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 18z"/></svg>
-        <?= htmlspecialchars($t['tel']) ?>
+        <?= htmlspecialchars($nav_labels['tel']) ?>
       </a>
 
       <button class="burger" aria-label="Menu" aria-expanded="false">
@@ -172,10 +172,10 @@ $prefix = ($lang === 'fr') ? '' : $lang . '/';
 <!-- NAV OVERLAY MOBILE -->
 <nav class="nav-overlay" aria-label="Menu mobile">
   <button class="nav-overlay-close" aria-label="Fermer">✕</button>
-  <a href="/<?= $prefix ?>a-propos.php"><?= $t['apropos'] ?></a>
-  <a href="/<?= $prefix ?>prestations.php"><?= $t['prestations'] ?></a>
-  <a href="/<?= $prefix ?>tarifs.php"><?= $t['tarifs'] ?></a>
-  <a href="/<?= $prefix ?>contact.php"><?= $t['contact'] ?></a>
+  <a href="/<?= $prefix ?>a-propos.php"><?= $nav_labels['apropos'] ?></a>
+  <a href="/<?= $prefix ?>prestations.php"><?= $nav_labels['prestations'] ?></a>
+  <a href="/<?= $prefix ?>tarifs.php"><?= $nav_labels['tarifs'] ?></a>
+  <a href="/<?= $prefix ?>contact.php"><?= $nav_labels['contact'] ?></a>
   <a href="tel:+33610082007" style="color:var(--or);font-size:1.4rem;margin-top:1rem;">
     📞 06 10 08 20 07
   </a>
