@@ -1,15 +1,16 @@
 <?php
-$lang = 'fr';
+$lang = 'en';
 $page = 'apropos';
-include 'includes/i18n.php';
-$t = vtc_t('fr');
+$prefix = 'en/';
+include '../includes/i18n.php';
+$t = vtc_t('en');
 $meta = [
   'title'     => $t['ap_meta_title'],
   'desc'      => $t['ap_meta_desc'],
-  'canonical' => 'https://www.audevtc.fr/a-propos.php',
+  'canonical' => 'https://www.audevtc.fr/en/a-propos.php',
 ];
-include 'includes/header.php';
-include 'includes/icons.php';
+include '../includes/header.php';
+include '../includes/icons.php';
 ?>
 
 <main style="padding-top:160px;overflow-x:hidden;">
@@ -279,7 +280,7 @@ include 'includes/icons.php';
       <h2 style="font-family:var(--font-display);font-size:2.2rem;color:var(--noir);margin-bottom:var(--s2);"><?= $t['ap_cta_title'] ?></h2>
       <p style="color:rgba(8,8,16,.7);margin-bottom:var(--s4);"><?= $t['ap_cta_desc'] ?></p>
       <div style="display:flex;gap:var(--s2);justify-content:center;flex-wrap:wrap;">
-        <a href="/contact.php" class="btn" style="background:var(--noir);color:var(--blanc);"><?= $t['ap_cta_book'] ?></a>
+        <a href="/en/contact.php" class="btn" style="background:var(--noir);color:var(--blanc);"><?= $t['ap_cta_book'] ?></a>
         <a href="tel:+33610082007" class="btn" style="background:transparent;color:var(--noir);border:2px solid var(--noir);">06 10 08 20 07</a>
       </div>
     </div>
@@ -287,4 +288,4 @@ include 'includes/icons.php';
 
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
