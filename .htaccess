@@ -12,9 +12,19 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [R=301,L]
 
-# --- Trailing slash supprimé ---
+# --- Trailing slash : supprimé sauf dossiers langue ---
 RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/(en|de)/$
 RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# --- Routes langues explicites ---
+RewriteRule ^en/?$ /en/index.php [L]
+RewriteRule ^de/?$ /de/index.php [L]
+RewriteRule ^en/contact/?$ /en/contact.php [L]
+RewriteRule ^de/contact/?$ /de/contact.php [L]
+
+# --- DirectoryIndex explicite ---
+DirectoryIndex index.php index.html
 
 # --- Sécurité headers ---
 <IfModule mod_headers.c>
