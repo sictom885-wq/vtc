@@ -274,7 +274,7 @@ include 'includes/icons.php';
       <!-- Tourisme & Événements -->
       <div class="presta-card reveal reveal-delay-3">
         <div class="presta-img">
-          <img src="/assets/images/tourisme.webp" alt="Tourisme Occitanie VTC privé" width="400" height="225" loading="lazy">
+          <img src="/assets/images/carcassonne-nuit2.webp" alt="Tourisme Occitanie VTC privé" width="400" height="225" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
