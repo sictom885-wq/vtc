@@ -74,9 +74,9 @@ include 'includes/icons.php';
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);text-align:center;">
         <?php
         $chiffres = [
-          ['500+',  'Trajets réalisés',      'Depuis la création d'AUDE VTC'],
+          ['500+',  'Trajets réalisés',      'Depuis la création d\'AUDE VTC'],
           ['16',    'Avis Google ★ 5/5',     'Satisfaction client garantie'],
-          ['5',     'Ans d'expérience',       'Dans le tourisme occitan'],
+          ['5',     'Ans d\'expérience',      'Dans le tourisme occitan'],
           ['3',     'Langues parlées',        'Français · Anglais · Allemand'],
         ];
         foreach($chiffres as $i => $c): ?>
@@ -105,11 +105,11 @@ include 'includes/icons.php';
 
         <?php
         $timeline = [
-          ['2008', 'Découverte de l'Occitanie',      'Natif de la région, Michel développe une passion profonde pour l\'histoire cathare, les vignobles des Corbières et les paysages du Canal du Midi.'],
-          ['2016', 'Secteur du tourisme',             'Il rejoint le secteur touristique régional — guides, agences, excursions — et acquiert une connaissance intime des sites et des anecdotes qui font l\'âme de l\'Occitanie.'],
-          ['2019', 'Création d'AUDE VTC',             'Fort de son réseau et de sa connaissance du terrain, il crée AUDE VTC : un service de transport privé haut de gamme ancré dans l\'authenticité locale.'],
-          ['2022', 'Certification & trilinguisme',    'Perfectionnement de l\'anglais et de l\'allemand pour accueillir les voyageurs internationaux. Certification chauffeur VTC, véhicule hybride.'],
-          ['2024', 'Expansion & reconnaissance',      '500 trajets réalisés, 16 avis Google 5 étoiles, et une clientèle fidèle de voyageurs d\'affaires et de touristes du monde entier.'],
+          ['2008', 'Découverte de l\'Occitanie',   'Natif de la région, Michel développe une passion profonde pour l\'histoire cathare, les vignobles des Corbières et les paysages du Canal du Midi.'],
+          ['2016', 'Secteur du tourisme',            'Il rejoint le secteur touristique régional — guides, agences, excursions — et acquiert une connaissance intime des sites et des anecdotes qui font l\'âme de l\'Occitanie.'],
+          ['2019', 'Création d\'AUDE VTC',           'Fort de son réseau et de sa connaissance du terrain, il crée AUDE VTC : un service de transport privé haut de gamme ancré dans l\'authenticité locale.'],
+          ['2022', 'Certification & trilinguisme',   'Perfectionnement de l\'anglais et de l\'allemand pour accueillir les voyageurs internationaux. Certification chauffeur VTC, véhicule hybride.'],
+          ['2024', 'Expansion & reconnaissance',     '500 trajets réalisés, 16 avis Google 5 étoiles, et une clientèle fidèle de voyageurs d\'affaires et de touristes du monde entier.'],
         ];
         foreach($timeline as $i => $e): ?>
         <div class="reveal" style="display:flex;gap:var(--s4);margin-bottom:var(--s6);position:relative;">
