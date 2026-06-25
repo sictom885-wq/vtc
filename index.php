@@ -121,6 +121,9 @@ include 'includes/icons.php';
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
           Envoyer ma demande
         </button>
+        <p style="text-align:center;font-size:.78rem;color:var(--gris-2);margin-top:var(--s2);">
+          ✓ Devis gratuit &nbsp;·&nbsp; Sans engagement &nbsp;·&nbsp; Réponse garantie sous 2h
+        </p>
       </form>
     </div>
   </div>

@@ -21,6 +21,7 @@ $circuits = [
       <span class="gold-line"></span>
       <h1 class="section-title"><?= $t['to_h1'] ?> <span><?= $t['to_h1_em'] ?></span></h1>
       <p class="lead"><?= $t['to_lead'] ?></p>
+      <p style="font-size:.88rem;color:var(--gris-1);margin-top:var(--s2);line-height:1.6;"><?= $t['to_custom_hero_lead'] ?></p>
       <div style="margin-top:var(--s4);"><a href="/contact.php" class="btn btn-primary"><?= $t['to_cta_create'] ?></a></div>
     </div>
   </section>
@@ -41,7 +42,7 @@ $circuits = [
             <p class="presta-desc" style="font-size:.95rem;"><?= $c['desc'] ?></p>
             <div style="display:flex;align-items:center;justify-content:space-between;margin-top:var(--s4);">
               <span style="font-family:var(--font-display);font-size:1.5rem;color:var(--or);"><?= $c['tarif'] ?></span>
-              <a href="/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_book'] ?></a>
+              <a href="/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_reserve_cta'] ?></a>
             </div>
           </div><?php endif; ?>
           <div style="position:relative;aspect-ratio:16/9;overflow:hidden;">
@@ -52,7 +53,7 @@ $circuits = [
               <p class="presta-desc" style="font-size:.95rem;"><?= $c['desc'] ?></p>
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:var(--s4);">
                 <span style="font-family:var(--font-display);font-size:1.5rem;color:var(--or);"><?= $c['tarif'] ?></span>
-                <a href="/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_book'] ?></a>
+                <a href="/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_reserve_cta'] ?></a>
               </div>
             </div><?php endif; ?>
           </div>

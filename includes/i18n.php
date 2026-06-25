@@ -447,12 +447,12 @@ function vtc_t(string $lang = 'fr'): array {
 
 
     /* ===== TRANSFERTS AEROPORT ===== */
-    'ta_meta_title'  => ['fr'=>'Transferts Aéroport VTC Carcassonne — Toulouse, Montpellier, Perpignan | AUDE VTC',
-                         'en'=>'Airport Transfers VTC Carcassonne — Toulouse, Montpellier, Perpignan | AUDE VTC',
-                         'de'=>'Flughafentransfers VTC Carcassonne — Toulouse, Montpellier, Perpignan | AUDE VTC'],
-    'ta_meta_desc'   => ['fr'=>'Transfert aéroport en VTC privé depuis Carcassonne. Toulouse Blagnac, Montpellier, Perpignan, Bordeaux. Prise en charge avec panneau nominatif, suivi de vol, tarif fixe.',
-                         'en'=>'Private VTC airport transfer from Carcassonne. Toulouse Blagnac, Montpellier, Perpignan, Bordeaux. Meet-and-greet, flight tracking, fixed rate.',
-                         'de'=>'Privater VTC-Flughafentransfer ab Carcassonne. Toulouse Blagnac, Montpellier, Perpignan, Bordeaux. Namentliches Empfangsschild, Flugverfolgung, Festpreis.'],
+    'ta_meta_title'  => ['fr'=>'Chauffeur VTC Transfert Aéroport Carcassonne — Toulouse Blagnac, Montpellier, Perpignan | AUDE VTC',
+                         'en'=>'Private Chauffeur Airport Transfer from Carcassonne — Toulouse Blagnac, Montpellier, Perpignan | AUDE VTC',
+                         'de'=>'Privater VTC-Fahrer Carcassonne für Flughafentransfers — Toulouse Blagnac, Montpellier, Perpignan | AUDE VTC'],
+    'ta_meta_desc'   => ['fr'=>'Chauffeur VTC à Carcassonne pour vos transferts aéroport : Toulouse Blagnac, Carcassonne CCF, Montpellier, Perpignan, Bordeaux. Suivi de vol, accueil nominatif, tarif fixe. Desservi depuis Carcassonne, Trèbes, Limoux, Narbonne.',
+                         'en'=>'Private VTC chauffeur in Carcassonne for airport transfers: Toulouse Blagnac, Carcassonne CCF, Montpellier, Perpignan, Bordeaux. Flight tracking, name sign, fixed rate. Serving Carcassonne, Trèbes, Limoux, Narbonne.',
+                         'de'=>'VTC-Privatfahrer in Carcassonne für Flughafentransfers: Toulouse Blagnac, Carcassonne CCF, Montpellier, Perpignan, Bordeaux. Flugverfolgung, Namensschild, Festpreis. Einzugsgebiet: Carcassonne, Trèbes, Limoux, Narbonne.'],
     'ta_eyebrow'     => ['fr'=>'Nos Prestations','en'=>'Our Services','de'=>'Unsere Leistungen'],
     'ta_h1'          => ['fr'=>'Transferts','en'=>'Airport','de'=>'Flughafen'],
     'ta_h1_em'       => ['fr'=>'Aéroports','en'=>'Transfers','de'=>'Transfers'],
@@ -490,12 +490,12 @@ function vtc_t(string $lang = 'fr'): array {
     'ta_from'        => ['fr'=>'À partir de','en'=>'From','de'=>'Ab'],
 
     /* ===== TRANSFERTS GARE ===== */
-    'tg_meta_title'  => ['fr'=>'Transferts Gare VTC Carcassonne — Toulouse, Montpellier, Béziers | AUDE VTC',
-                         'en'=>'Train Station Transfers VTC Carcassonne — Toulouse, Montpellier, Béziers | AUDE VTC',
-                         'de'=>'Bahnhoftransfers VTC Carcassonne — Toulouse, Montpellier, Béziers | AUDE VTC'],
-    'tg_meta_desc'   => ['fr'=>'VTC pour vos transferts gare depuis Carcassonne et Castelnaudary. Toulouse Matabiau, Montpellier, Sète, Béziers. Accueil nominatif, suivi SNCF, tarif fixe.',
-                         'en'=>'VTC for your station transfers from Carcassonne and Castelnaudary. Toulouse Matabiau, Montpellier, Sète, Béziers. Name sign, SNCF tracking, fixed rate.',
-                         'de'=>'VTC für Ihre Bahnhoftransfers ab Carcassonne und Castelnaudary. Toulouse Matabiau, Montpellier, Sète, Béziers. Namensschild, SNCF-Überwachung, Festpreis.'],
+    'tg_meta_title'  => ['fr'=>'Chauffeur VTC Transfert Gare Carcassonne — Toulouse Matabiau, Montpellier, Béziers | AUDE VTC',
+                         'en'=>'Private Chauffeur Train Station Transfer from Carcassonne — Toulouse Matabiau, Montpellier, Béziers | AUDE VTC',
+                         'de'=>'Privater VTC-Fahrer Carcassonne für Bahnhoftransfers — Toulouse Matabiau, Montpellier, Béziers | AUDE VTC'],
+    'tg_meta_desc'   => ['fr'=>'Chauffeur VTC à Carcassonne pour vos transferts gare : Toulouse Matabiau, Montpellier, Béziers, Sète. Accueil nominatif, suivi SNCF en temps réel, tarif fixe. Desservi depuis Carcassonne, Castelnaudary, Limoux, Trèbes.',
+                         'en'=>'Private VTC chauffeur in Carcassonne for train station transfers: Toulouse Matabiau, Montpellier, Béziers, Sète. Name sign, real-time SNCF tracking, fixed rate. Serving Carcassonne, Castelnaudary, Limoux, Trèbes.',
+                         'de'=>'VTC-Privatfahrer in Carcassonne für Bahnhoftransfers: Toulouse Matabiau, Montpellier, Béziers, Sète. Namensschild, SNCF-Echtzeit, Festpreis. Einzugsgebiet: Carcassonne, Castelnaudary, Limoux, Trèbes.'],
     'tg_h1'          => ['fr'=>'Transferts','en'=>'Train Station','de'=>'Bahnhof'],
     'tg_h1_em'       => ['fr'=>'Gares','en'=>'Transfers','de'=>'Transfers'],
     'tg_lead'        => ['fr'=>'Train en retard ? Votre chauffeur surveille le trafic SNCF en temps réel et adapte son heure d\'arrivée.',
@@ -546,12 +546,12 @@ function vtc_t(string $lang = 'fr'): array {
                          'de'=>'In 2 Minuten gebucht, wir kümmern uns um den Rest.'],
 
     /* ===== TOURISME OCCITANIE ===== */
-    'to_meta_title'  => ['fr'=>'Tourisme Occitanie en VTC Privé — Carcassonne, Canal du Midi, Vignobles | AUDE VTC',
-                         'en'=>'Occitanie Private VTC Tours — Carcassonne, Canal du Midi, Vineyards | AUDE VTC',
-                         'de'=>'Okzitanien Privater VTC-Tourismus — Carcassonne, Canal du Midi, Weinberge | AUDE VTC'],
-    'to_meta_desc'   => ['fr'=>'Découvrez l\'Occitanie en VTC privé : Cité de Carcassonne, Canal du Midi, vignobles du Languedoc, Pays Cathare. Circuits sur mesure avec chauffeur trilingue.',
-                         'en'=>'Discover Occitanie by private VTC: Cité de Carcassonne, Canal du Midi, Languedoc vineyards, Cathar Country. Tailor-made tours with a trilingual driver.',
-                         'de'=>'Entdecken Sie Okzitanien mit privatem VTC: Cité de Carcassonne, Canal du Midi, Weinberge des Languedoc, Katharerland. Maßgeschneiderte Touren mit dreisprachigem Fahrer.'],
+    'to_meta_title'  => ['fr'=>'Chauffeur VTC Tourisme Carcassonne — Cité Médiévale, Canal du Midi, Vignobles Occitanie | AUDE VTC',
+                         'en'=>'Private VTC Tours from Carcassonne — Cité Médiévale, Canal du Midi, Languedoc Vineyards | AUDE VTC',
+                         'de'=>'Privater VTC-Tourismus ab Carcassonne — Cité Médiévale, Canal du Midi, Languedoc-Weinberge | AUDE VTC'],
+    'to_meta_desc'   => ['fr'=>'Chauffeur privé VTC à Carcassonne pour vos circuits touristiques : Cité médiévale, Canal du Midi, vignobles des Corbières, Pays Cathare. Itinéraires sur mesure, chauffeur trilingue FR/EN/DE.',
+                         'en'=>'Private VTC chauffeur in Carcassonne for guided tours: medieval Cité, Canal du Midi, Corbières vineyards, Cathar Country. Tailor-made itineraries, trilingual driver FR/EN/DE.',
+                         'de'=>'VTC-Privatfahrer in Carcassonne für geführte Touren: mittelalterliche Cité, Canal du Midi, Corbières-Weinberge, Katharerland. Individuelle Reiseprogramme, dreisprachiger Fahrer FR/EN/DE.'],
     'to_h1'          => ['fr'=>'Tourisme','en'=>'Occitanie','de'=>'Tourismus'],
     'to_h1_em'       => ['fr'=>'Occitanie','en'=>'Tourism','de'=>'Okzitanien'],
     'to_lead'        => ['fr'=>'Chauffeur, guide et confident — Michel Richard met 5 ans d\'expérience dans le tourisme régional au service de votre découverte de l\'Occitanie.',
@@ -636,6 +636,25 @@ function vtc_t(string $lang = 'fr'): array {
                          'en'=>'Extra km: €0.40/km. Night (10pm–6am): +20%. Custom quote for groups.',
                          'de'=>'Zusätzliche km: 0,40€/km. Nacht (22–6 Uhr): +20%. Maßgeschneidertes Angebot für Gruppen.'],
     'ev_cta_reserve' => ['fr'=>'Réserver ma mise à disposition','en'=>'Book my chauffeur hire','de'=>'Fahrzeug mit Fahrer buchen'],
+
+
+    /* ===== PARAGRAPHES GEO SEO ===== */
+    'ta_geo_title'   => ['fr'=>'Votre chauffeur VTC à Carcassonne et dans tout le bassin audois',
+                         'en'=>'Your VTC chauffeur in Carcassonne and across the Aude area',
+                         'de'=>'Ihr VTC-Fahrer in Carcassonne und im gesamten Aude-Gebiet'],
+    'ta_geo_text'    => ['fr'=>'AUDE VTC assure vos transferts vers tous les aéroports de la région depuis <strong>Carcassonne</strong> et les communes voisines : <strong>Trèbes, Limoux, Castelnaudary, Narbonne, Lézignan-Corbières, Alzonne</strong>. Un seul chauffeur, un tarif fixe, zéro surprise — quelle que soit votre adresse de départ.',
+                         'en'=>'AUDE VTC handles your airport transfers from <strong>Carcassonne</strong> and surrounding towns: <strong>Trèbes, Limoux, Castelnaudary, Narbonne, Lézignan-Corbières, Alzonne</strong>. One chauffeur, one fixed rate, no surprises — wherever you start from.',
+                         'de'=>'AUDE VTC übernimmt Ihre Flughafentransfers ab <strong>Carcassonne</strong> und Umgebung: <strong>Trèbes, Limoux, Castelnaudary, Narbonne, Lézignan-Corbières, Alzonne</strong>. Ein Fahrer, ein Festpreis, keine Überraschungen — egal wo Sie starten.'],
+    'tg_geo_title'   => ['fr'=>'Chauffeur VTC pour vos transferts gare depuis Carcassonne et le Lauragais',
+                         'en'=>'VTC chauffeur for your train station transfers from Carcassonne and the Lauragais',
+                         'de'=>'VTC-Fahrer für Ihre Bahnhoftransfers ab Carcassonne und dem Lauragais'],
+    'tg_geo_text'    => ['fr'=>'AUDE VTC prend en charge vos transferts gare depuis <strong>Carcassonne</strong>, <strong>Castelnaudary</strong> et les communes environnantes : <strong>Trèbes, Limoux, Alzonne, Saissac, Fanjeaux</strong>. Accueil sur quai, suivi SNCF en temps réel — vous arrivez détendu.',
+                         'en'=>'AUDE VTC picks you up for station transfers from <strong>Carcassonne</strong>, <strong>Castelnaudary</strong> and nearby towns: <strong>Trèbes, Limoux, Alzonne, Saissac, Fanjeaux</strong>. Platform meet-and-greet, real-time SNCF tracking — you arrive relaxed.',
+                         'de'=>'AUDE VTC holt Sie für Bahnhoftransfers in <strong>Carcassonne</strong>, <strong>Castelnaudary</strong> und Umgebung ab: <strong>Trèbes, Limoux, Alzonne, Saissac, Fanjeaux</strong>. Bahnsteigempfang, SNCF-Echtzeit — Sie kommen entspannt an.'],
+    'to_reserve_cta' => ['fr'=>'Réserver ce circuit','en'=>'Book this tour','de'=>'Tour buchen'],
+    'to_custom_hero_lead' => ['fr'=>'Circuits sur mesure ou itinéraires personnalisés : dites-nous vos envies, Michel Richard construit votre programme — étapes, rythme, langue. Tout est possible.',
+                              'en'=>'Tailor-made tours or custom itineraries: tell us your wishes, Michel Richard builds your programme — stops, pace, language. Anything is possible.',
+                              'de'=>'Maßgeschneiderte Touren oder individuelle Reiseprogramme: Teilen Sie uns Ihre Wünsche mit, Michel Richard gestaltet Ihr Programm — Stopps, Tempo, Sprache. Alles ist möglich.'],
 
     ]; // fin $strings
 

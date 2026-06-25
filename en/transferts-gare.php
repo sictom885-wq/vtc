@@ -78,6 +78,10 @@ $gares = [
         <?php endforeach; ?>
       </div>
       <p style="font-size:.78rem;color:var(--gris-2);margin-top:var(--s3);"><?= $t['tg_tarif_note'] ?></p>
+      <div style="margin-top:var(--s4);background:rgba(201,168,76,.04);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s4);">
+        <h3 style="font-weight:600;color:var(--blanc);font-size:.95rem;margin-bottom:var(--s2);"><?= $t['tg_geo_title'] ?></h3>
+        <p style="font-size:.85rem;color:var(--gris-1);line-height:1.7;"><?= $t['tg_geo_text'] ?></p>
+      </div>
       <div style="margin-top:var(--s6);text-align:center;"><a href="/en/contact.php" class="btn btn-primary"><?= $t['tg_cta_book'] ?></a></div>
     </div>
   </section>
