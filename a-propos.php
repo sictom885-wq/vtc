@@ -10,7 +10,7 @@ include 'includes/header.php';
 include 'includes/icons.php';
 ?>
 
-<main style="padding-top:160px;">
+<main style="padding-top:160px;overflow-x:hidden;">
 
   <!-- HERO PHOTO -->
   <section style="position:relative;height:520px;overflow:hidden;display:flex;align-items:center;">
