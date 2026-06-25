@@ -98,10 +98,10 @@ $circuits = [
 
   <!-- CIRCUIT SUR MESURE -->
   <section class="section section--dark">
-    <div class="container" style="text-align:center;max-width:700px;margin-inline:auto;">
+    <div class="container" style="text-align:center;max-width:960px;margin-inline:auto;">
       <span class="eyebrow">Circuit personnalisé</span>
       <span class="gold-line" style="margin-inline:auto;"></span>
-      <h2 class="section-title">Vous avez un itinéraire <span>en tête ?</span></h2>
+      <h2 class="section-title" style="font-size:clamp(1.8rem,3.5vw,3rem);white-space:nowrap;">Vous avez un itinéraire <span>en tête ?</span></h2>
       <p class="lead" style="margin-inline:auto;margin-bottom:var(--s6);">
         Parlez-nous de vos envies — lieux, durée, langue — nous construisons votre programme sur mesure. Aucun supplément caché.
       </p>
