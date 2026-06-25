@@ -1,21 +1,22 @@
 <?php
-$lang = 'fr';
+$lang = 'en';
 $page = 'prestations';
-include 'includes/i18n.php';
-$t = vtc_t('fr');
+$prefix = 'en/';
+include '../includes/i18n.php';
+$t = vtc_t('en');
 $meta = [
   'title'     => $t['pp_meta_title'],
   'desc'      => $t['pp_meta_desc'],
-  'canonical' => 'https://www.audevtc.fr/prestations.php',
+  'canonical' => 'https://www.audevtc.fr/en/prestations.php',
 ];
-include 'includes/header.php';
-include 'includes/icons.php';
+include '../includes/header.php';
+include '../includes/icons.php';
 
 $prestations = [
-  ['icon'=>'plane','titre'=>$t['pp_aero_title'],'desc'=>$t['pp_aero_desc'],'points'=>[$t['pp_aero_p1'],$t['pp_aero_p2'],$t['pp_aero_p3']],'url'=>'transferts-aeroport.php','cta'=>$t['pp_aero_cta']],
-  ['icon'=>'train','titre'=>$t['pp_gare_title'],'desc'=>$t['pp_gare_desc'],'points'=>[$t['pp_gare_p1'],$t['pp_gare_p2'],$t['pp_gare_p3']],'url'=>'transferts-gare.php','cta'=>$t['pp_gare_cta']],
-  ['icon'=>'castle','titre'=>$t['pp_tour_title'],'desc'=>$t['pp_tour_desc'],'points'=>[$t['pp_tour_p1'],$t['pp_tour_p2'],$t['pp_tour_p3']],'url'=>'tourisme-occitanie.php','cta'=>$t['pp_tour_cta']],
-  ['icon'=>'heart','titre'=>$t['pp_evt_title'],'desc'=>$t['pp_evt_desc'],'points'=>[$t['pp_evt_p1'],$t['pp_evt_p2'],$t['pp_evt_p3']],'url'=>'evenements.php','cta'=>$t['pp_evt_cta']],
+  ['icon'=>'plane','titre'=>$t['pp_aero_title'],'desc'=>$t['pp_aero_desc'],'points'=>[$t['pp_aero_p1'],$t['pp_aero_p2'],$t['pp_aero_p3']],'url'=>'en/transferts-aeroport.php','cta'=>$t['pp_aero_cta']],
+  ['icon'=>'train','titre'=>$t['pp_gare_title'],'desc'=>$t['pp_gare_desc'],'points'=>[$t['pp_gare_p1'],$t['pp_gare_p2'],$t['pp_gare_p3']],'url'=>'en/transferts-gare.php','cta'=>$t['pp_gare_cta']],
+  ['icon'=>'castle','titre'=>$t['pp_tour_title'],'desc'=>$t['pp_tour_desc'],'points'=>[$t['pp_tour_p1'],$t['pp_tour_p2'],$t['pp_tour_p3']],'url'=>'en/tourisme-occitanie.php','cta'=>$t['pp_tour_cta']],
+  ['icon'=>'heart','titre'=>$t['pp_evt_title'],'desc'=>$t['pp_evt_desc'],'points'=>[$t['pp_evt_p1'],$t['pp_evt_p2'],$t['pp_evt_p3']],'url'=>'en/evenements.php','cta'=>$t['pp_evt_cta']],
 ];
 $engagements = [
   ['shield',$t['pp_eng1_t'],$t['pp_eng1_d']],
@@ -89,7 +90,7 @@ $engagements = [
         <p style="color:rgba(8,8,16,.7);margin-top:var(--s1);"><?= $t['pp_cta_desc'] ?></p>
       </div>
       <div style="display:flex;gap:var(--s2);">
-        <a href="/contact.php" class="btn" style="background:var(--noir);color:var(--blanc);"><?= $t['pp_cta_devis'] ?></a>
+        <a href="/en/contact.php" class="btn" style="background:var(--noir);color:var(--blanc);"><?= $t['pp_cta_devis'] ?></a>
         <a href="tel:+33610082007" class="btn" style="background:transparent;color:var(--noir);border:2px solid var(--noir);">06 10 08 20 07</a>
       </div>
     </div>
@@ -97,4 +98,4 @@ $engagements = [
 
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
