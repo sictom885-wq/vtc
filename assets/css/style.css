@@ -314,7 +314,7 @@ body:not(.scrolled-past-topbar) #header {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/hero-bg.jpg') center/cover no-repeat;
+  background: url('../images/hero-bg.webp') center/cover no-repeat;
 }
 
 .hero-bg::after {
@@ -620,16 +620,15 @@ body:not(.scrolled-past-topbar) #header {
 
 .apropos-badge {
   position: absolute;
-  bottom: -var(--s3);
-  right: -var(--s3);
+  bottom: var(--s3);
+  right: var(--s3);
   background: var(--or);
   color: var(--noir);
   border-radius: var(--radius-lg);
   padding: var(--s3);
   text-align: center;
   min-width: 120px;
-  bottom: calc(-1 * var(--s3));
-  right: calc(-1 * var(--s3));
+  box-shadow: 0 8px 32px rgba(0,0,0,.4);
 }
 
 .apropos-badge .badge-num {
