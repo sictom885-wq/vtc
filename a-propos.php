@@ -186,10 +186,10 @@ include 'includes/icons.php';
   <section class="section">
     <div class="container">
       <div class="reveal" style="text-align:center;max-width:600px;margin-inline:auto;margin-bottom:var(--s8);">
-        <span class="eyebrow">Le Véhicule</span>
+        <span class="eyebrow">La Flotte</span>
         <span class="gold-line" style="margin-inline:auto;"></span>
-        <h2 class="section-title">Mercedes Break <span>Hybride</span></h2>
-        <p class="lead" style="margin-inline:auto;">Spacieux, silencieux, climatisé. Conçu pour le confort de 1 à 4 passagers avec leurs bagages.</p>
+        <h2 class="section-title">Nos <span>Véhicules</span></h2>
+        <p class="lead" style="margin-inline:auto;">Berline pour vos trajets en toute discrétion, van spacieux pour les groupes et les bagages volumineux. Spacieux, silencieux, climatisés.</p>
       </div>
 
       <!-- Galerie Bento premium -->
@@ -291,7 +291,7 @@ include 'includes/icons.php';
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);">
         <?php
         $specs = [
-          ['M19 17H5a2 2 0 0 0-2 2v1h18v-1a2 2 0 0 0-2-2ZM12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z', 'Capacité', '4 passagers + bagages volumineux'],
+          ['M19 17H5a2 2 0 0 0-2 2v1h18v-1a2 2 0 0 0-2-2ZM12 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z', 'Capacité', 'Berline 1 à 4 passagers, van jusqu\'à 7'],
           ['M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24A2.5 2.5 0 0 1 9.5 2ZM14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24A2.5 2.5 0 0 0 14.5 2Z', 'Confort', 'Sièges cuir, climatisation, vitres teintées'],
           ['M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01', 'Connectivité', 'Chargeur USB, WiFi, eau minérale offerte'],
           ['M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zM2 12h20', 'Motorisation', 'Hybride — CO₂ réduit, trajet silencieux'],
