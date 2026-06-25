@@ -1322,3 +1322,31 @@ body:not(.scrolled-past-topbar) #header {
 .contact-item a:hover {
   color: var(--or);
 }
+
+
+/* icon-box dans presta-body : aligne comme sur la home */
+.presta-body .icon-box {
+  margin-bottom: var(--s3);
+  width: 48px;
+  height: 48px;
+  background: rgba(201,168,76,.12);
+  border: 1px solid rgba(201,168,76,.25);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--or);
+  flex-shrink: 0;
+}
+
+.presta-card:hover .presta-body .icon-box {
+  background: rgba(201,168,76,.22);
+  border-color: rgba(201,168,76,.45);
+}
+
+/* SVG dans icon-box toujours or */
+.icon-box svg,
+.presta-icon svg {
+  color: var(--or);
+  stroke: currentColor;
+}
