@@ -27,7 +27,9 @@ include 'includes/icons.php';
     <div class="container" style="position:relative;z-index:2;">
       <span class="eyebrow">Qui sommes-nous</span>
       <span class="gold-line"></span>
-      <h1 class="section-title" style="font-size:clamp(2rem,4vw,3.5rem);max-width:700px;white-space:nowrap;">À Propos <span>d'AUDE VTC</span></h1>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2rem,3.5vw,3.2rem);font-weight:300;line-height:1.1;color:var(--blanc);margin-bottom:var(--s3);">
+        À Propos <span style="color:var(--or);">d'AUDE VTC</span>
+      </h1>
       <p class="lead" style="max-width:480px;margin-top:var(--s2);">Derrière AUDE VTC, un homme, une passion : vous faire découvrir l'Occitanie dans les meilleures conditions.</p>
     </div>
   </section>
