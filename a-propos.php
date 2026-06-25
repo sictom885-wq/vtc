@@ -37,48 +37,35 @@ include 'includes/icons.php';
   <!-- PORTRAIT -->
   <section class="section">
     <div class="container">
-      <div class="apropos-inner">
-        <div class="apropos-img-wrap reveal">
-          <img src="/assets/images/chauffeur-hero.webp"
-               alt="Michel Richard, chauffeur privé AUDE VTC Carcassonne"
-               width="540" height="680" loading="lazy"
-               style="border-radius:var(--radius-lg);width:100%;aspect-ratio:4/5;object-fit:cover;background:var(--noir-3);">
-          <div class="apropos-badge">
-            <span class="badge-num">+5</span>
-            <span class="badge-label">ans d'expérience</span>
-          </div>
-        </div>
+      <div class="reveal" style="max-width:800px;">
+        <span class="eyebrow">Michel Richard</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title" style="font-size:2.4rem;">Votre chauffeur,<br><span>votre guide</span></h2>
+        <p style="font-size:1rem;color:var(--gris-1);line-height:1.8;margin-bottom:var(--s3);">
+          Passionné par sa région depuis toujours, Michel Richard a choisi de faire du transport privé une expérience à part entière. Avant de créer AUDE VTC, il a travaillé plusieurs années dans le secteur du tourisme occitan — ce qui lui confère une connaissance intime des lieux, des vignobles, de l'histoire cathare et des chemins de traverse.
+        </p>
+        <p style="font-size:1rem;color:var(--gris-1);line-height:1.8;margin-bottom:var(--s4);">
+          Trilingue français, anglais et allemand, il accueille aussi bien les voyageurs locaux que les touristes internationaux, avec la même attention portée à chaque trajet : ponctualité, discrétion, conversation — ou silence, si c'est ce dont vous avez besoin.
+        </p>
+      </div>
 
-        <div class="apropos-content reveal reveal-delay-1">
-          <span class="eyebrow">Michel Richard</span>
-          <span class="gold-line"></span>
-          <h2 class="section-title" style="font-size:2.4rem;">Votre chauffeur,<br><span>votre guide</span></h2>
-          <p style="font-size:1rem;color:var(--gris-1);line-height:1.8;margin-bottom:var(--s3);">
-            Passionné par sa région depuis toujours, Michel Richard a choisi de faire du transport privé une expérience à part entière. Avant de créer AUDE VTC, il a travaillé plusieurs années dans le secteur du tourisme occitan — ce qui lui confère une connaissance intime des lieux, des vignobles, de l'histoire cathare et des chemins de traverse.
-          </p>
-          <p style="font-size:1rem;color:var(--gris-1);line-height:1.8;margin-bottom:var(--s4);">
-            Trilingue français, anglais et allemand, il accueille aussi bien les voyageurs locaux que les touristes internationaux, avec la même attention portée à chaque trajet : ponctualité, discrétion, conversation — ou silence, si c'est ce dont vous avez besoin.
-          </p>
-
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);">
-            <?php
-            $valeurs = [
-              ['M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', 'Ponctualité',       'Votre temps est précieux.'],
-              ['M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z', 'Discrétion', 'Vos affaires restent les vôtres.'],
-              ['M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', 'Trilingue',   'FR · EN · DE'],
-              ['M7 17l-4-4 4-4M17 7l4 4-4 4M14 3l-4 18',       'Éco-responsabilité','Mercedes Break hybride.'],
-            ];
-            foreach($valeurs as $v): ?>
-            <div class="card-hover" style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3);">
-              <div class="icon-box" style="margin-bottom:var(--s2);">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $v[0] ?>"/></svg>
-              </div>
-              <div style="font-weight:600;color:var(--blanc);font-size:.9rem;margin-bottom:4px;"><?= $v[1] ?></div>
-              <div style="font-size:.82rem;color:var(--gris-1);"><?= $v[2] ?></div>
-            </div>
-            <?php endforeach; ?>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);margin-top:var(--s4);">
+        <?php
+        $valeurs = [
+          ['M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', 'Ponctualité',       'Votre temps est précieux.'],
+          ['M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z', 'Discrétion', 'Vos affaires restent les vôtres.'],
+          ['M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', 'Trilingue',   'FR · EN · DE'],
+          ['M7 17l-4-4 4-4M17 7l4 4-4 4M14 3l-4 18',       'Éco-responsabilité','Mercedes Break hybride.'],
+        ];
+        foreach($valeurs as $i => $v): ?>
+        <div class="card-hover reveal reveal-delay-<?= $i+1 ?>" style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3);">
+          <div class="icon-box" style="margin-bottom:var(--s2);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $v[0] ?>"/></svg>
           </div>
+          <div style="font-weight:600;color:var(--blanc);font-size:.9rem;margin-bottom:4px;"><?= $v[1] ?></div>
+          <div style="font-size:.82rem;color:var(--gris-1);"><?= $v[2] ?></div>
         </div>
+        <?php endforeach; ?>
       </div>
     </div>
   </section>
