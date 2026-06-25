@@ -148,7 +148,7 @@ include '../includes/header.php';
       foreach($prests as $i => $p): ?>
       <div class="presta-card reveal reveal-delay-<?= $i+1 ?>">
         <div class="presta-img">
-          <img src="/assets/images/<?= $p[0] ?>.webp" alt="<?= htmlspecialchars($t[$p[1]]) ?>" width="400" height="225" loading="lazy">
+          <img src="/assets/images/card-<?= $p[0] ?>.svg" alt="<?= htmlspecialchars($t[$p[1]]) ?>" width="400" height="280" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
