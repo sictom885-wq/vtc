@@ -79,9 +79,7 @@ $circuits = [
             </div>
           </div><?php endif; ?>
           <div style="aspect-ratio:16/9;overflow:hidden;">
-            <img src="<?= $c['img'] ?>" alt="<?= htmlspecialchars($c['titre']) ?>" width="1200" height="675" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-          </div>
-          <?php if($i%2===0): ?><div class="presta-body" style="padding:var(--s6);">
+            <img src="<?= $c['img'] ?>" alt="<?= htmlspecialchars($c['titre']) ?>" width="1200" height="675" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;">
             <span class="eyebrow"><?= $c['duree'] ?></span>
             <h3 class="presta-title" style="font-size:1.8rem;"><?= $c['titre'] ?></h3>
             <p class="presta-desc" style="font-size:.95rem;"><?= $c['desc'] ?></p>

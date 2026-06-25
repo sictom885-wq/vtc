@@ -121,7 +121,7 @@ include 'includes/icons.php';
             <div style="font-size:.7rem;font-weight:700;color:var(--or);letter-spacing:.1em;"><?= $e[0] ?></div>
           </div>
           <!-- Contenu -->
-          <div style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3) var(--s4);flex:1;transition:border-color var(--transition);" onmouseover="this.style.borderColor='rgba(201,168,76,.35)'" onmouseout="this.style.borderColor='rgba(201,168,76,.1)'">
+          <div class="card-hover" style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3) var(--s4);flex:1;">
             <div style="font-weight:600;color:var(--blanc);font-size:.95rem;margin-bottom:6px;"><?= $e[1] ?></div>
             <div style="font-size:.85rem;color:var(--gris-1);line-height:1.7;"><?= $e[2] ?></div>
           </div>
@@ -175,7 +175,7 @@ include 'includes/icons.php';
           ],
         ];
         foreach($engagements as $i => $eng): ?>
-        <div class="reveal reveal-delay-<?= ($i%3)+1 ?>" style="background:var(--noir-3);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s4);transition:border-color var(--transition),transform var(--transition);" onmouseover="this.style.borderColor='rgba(201,168,76,.4)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(201,168,76,.1)';this.style.transform='none'">
+        <div class="reveal reveal-delay-<?= ($i%3)+1 ?>" style="background:var(--noir-3);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s4);" >
           <div class="icon-box" style="margin-bottom:var(--s3);">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $eng[0] ?>"/></svg>
           </div>

@@ -98,7 +98,7 @@ $gares = [
 
       <div style="margin-top:var(--s6);display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s2);">
         <?php foreach($gares as $i => $g): ?>
-        <div class="reveal" style="display:grid;grid-template-columns:1fr auto auto auto;align-items:center;gap:var(--s3);background:var(--noir-3);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3) var(--s4);transition:border-color var(--transition);" onmouseover="this.style.borderColor='rgba(201,168,76,.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,.1)'">
+        <div class="reveal" style="display:grid;grid-template-columns:1fr auto auto auto;align-items:center;gap:var(--s3);background:var(--noir-3);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3) var(--s4);" class="card-hover reveal">
           <span style="font-weight:600;color:var(--blanc);">Gare de <?= $g['nom'] ?></span>
           <span style="font-size:.8rem;color:var(--gris-1);"><?= $g['dist'] ?></span>
           <span style="font-size:.8rem;color:var(--gris-1);"><?= $g['duree'] ?></span>
