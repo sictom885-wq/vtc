@@ -34,6 +34,31 @@ $gares = [
     </div>
   </section>
 
+  <!-- AVANTAGES -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);">
+        <?php
+        $avantages = [
+          ['icon'=>'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z', 'titre'=>'Suivi SNCF en temps réel', 'desc'=>'Votre chauffeur monitore le trafic SNCF. Train en retard ou supprimé — il adapte son heure d\'arrivée.'],
+          ['icon'=>'M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM12 14a7 7 0 0 0-7 7h14a7 7 0 0 0-7-7z', 'titre'=>'Accueil nominatif', 'desc'=>'Votre chauffeur vous attend à la sortie du quai avec un panneau à votre nom. Zéro attente.'],
+          ['icon'=>'M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0z', 'titre'=>'Tarif fixe garanti', 'desc'=>'Prix convenu à la réservation. Embouteillages, péages, attente incluse — aucune surprise.'],
+        ];
+        foreach($avantages as $a): ?>
+        <div class="presta-card reveal" style="padding:0;">
+          <div class="presta-body">
+            <div class="icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $a['icon'] ?>"/></svg>
+            </div>
+            <h3 class="presta-title" style="font-size:1.2rem;"><?= $a['titre'] ?></h3>
+            <p class="presta-desc"><?= $a['desc'] ?></p>
+          </div>
+        </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
   <!-- COMMENT ÇA MARCHE -->
   <section class="section">
     <div class="container">
