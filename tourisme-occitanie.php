@@ -14,28 +14,28 @@ $circuits = [
     'titre'  => 'La Cité de Carcassonne',
     'duree'  => '3 à 4 heures',
     'desc'   => 'Visite de la plus grande forteresse médiévale d\'Europe. Remparts, château comtal, basilique Saint-Nazaire. Votre chauffeur vous partage l\'histoire de la région.',
-    'img'    => '/assets/images/carcassonne-cite.webp',
+    'img'    => '/assets/images/tourisme-carcassonne.webp',
     'tarif'  => 'À partir de 80€',
   ],
   [
     'titre'  => 'Canal du Midi & Écluses',
     'duree'  => 'Demi-journée',
     'desc'   => 'Balade le long du canal classé UNESCO depuis Carcassonne jusqu\'à Castelnaudary. Découvrez les écluses, les villages de bord de canal et les pénichettes.',
-    'img'    => '/assets/images/tourisme.webp',
+    'img'    => '/assets/images/tourisme-canal.webp',
     'tarif'  => 'À partir de 120€',
   ],
   [
     'titre'  => 'Vignobles du Languedoc',
     'duree'  => 'Journée',
     'desc'   => 'Circuit œnotouristique dans les Corbières et le Minervois. Visites de domaines, dégustations, rencontres avec les vignerons. Vous rentrez sereinement.',
-    'img'    => '/assets/images/carcassonne-nuit2.webp',
+    'img'    => '/assets/images/tourisme-vignobles.webp',
     'tarif'  => 'À partir de 220€',
   ],
   [
     'titre'  => 'Pays Cathare',
     'duree'  => 'Journée',
     'desc'   => 'Châteaux cathares de Montségur, Peyrepertuse, Quéribus — des forteresses perchées au-dessus des gorges. Une plongée dans l\'histoire médiévale d\'Occitanie.',
-    'img'    => '/assets/images/carcassonne-nuit2.webp',
+    'img'    => '/assets/images/tourisme-cathare.webp',
     'tarif'  => 'À partir de 250€',
   ],
 ];
@@ -79,9 +79,7 @@ $circuits = [
             </div>
           </div><?php endif; ?>
           <div style="aspect-ratio:16/9;overflow:hidden;">
-            <div style="width:100%;height:100%;background:var(--noir-3);display:flex;align-items:center;justify-content:center;">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="rgba(201,168,76,.3)" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
-            </div>
+            <img src="<?= $c['img'] ?>" alt="<?= htmlspecialchars($c['titre']) ?>" width="1200" height="675" loading="lazy" style="width:100%;height:100%;object-fit:cover;transition:transform .6s ease;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
           </div>
           <?php if($i%2===0): ?><div class="presta-body" style="padding:var(--s6);">
             <span class="eyebrow"><?= $c['duree'] ?></span>
