@@ -755,16 +755,59 @@ body:not(.scrolled-past-topbar) #header {
   color: var(--or);
   margin-bottom: var(--s2);
   flex-shrink: 0;
-  transition: background .4s ease, border-color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.22,1,.36,1);
+  position: relative;
+  overflow: hidden;
+  transition: background .4s ease, border-color .4s ease, box-shadow .5s ease, transform .4s cubic-bezier(.22,1,.36,1);
 }
 
+/* Shimmer sweep au hover */
+.icon-box::before,
+.presta-icon::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(115deg, transparent 30%, rgba(201,168,76,.35) 50%, transparent 70%);
+  transform: translateX(-100%);
+  transition: transform .55s ease;
+}
+
+.presta-card:hover .icon-box::before,
+.presta-card:hover .presta-icon::before,
+.card-hover:hover .icon-box::before,
+.step-card:hover .icon-box::before,
+.avis-card:hover .icon-box::before {
+  transform: translateX(100%);
+}
+
+/* SVG : rotation légère + scale */
+.icon-box svg,
+.presta-icon svg {
+  color: var(--or);
+  stroke: currentColor;
+  transition: transform .4s cubic-bezier(.22,1,.36,1), filter .4s ease;
+  will-change: transform;
+}
+
+.presta-card:hover .icon-box svg,
+.presta-card:hover .presta-icon svg,
+.card-hover:hover .icon-box svg,
+.step-card:hover .icon-box svg,
+.avis-card:hover .icon-box svg {
+  transform: scale(1.18) rotate(-8deg);
+  filter: drop-shadow(0 0 6px rgba(201,168,76,.7));
+}
+
+/* Container icon-box : scale + lueur */
 .presta-card:hover .presta-icon,
 .avantage-item:hover .icon-box,
-.presta-card:hover .icon-box {
-  background: rgba(201,168,76,.2);
-  border-color: rgba(201,168,76,.55);
-  box-shadow: 0 0 18px rgba(201,168,76,.25);
-  transform: scale(1.08);
+.presta-card:hover .icon-box,
+.card-hover:hover .icon-box,
+.step-card:hover .icon-box,
+.avis-card:hover .icon-box {
+  background: rgba(201,168,76,.22);
+  border-color: rgba(201,168,76,.6);
+  box-shadow: 0 0 0 4px rgba(201,168,76,.08), 0 0 20px rgba(201,168,76,.3);
+  transform: scale(1.1);
 }
 
 .presta-title {
@@ -1364,7 +1407,9 @@ body:not(.scrolled-past-topbar) #header {
 
 .presta-card:hover .presta-body .icon-box {
   background: rgba(201,168,76,.22);
-  border-color: rgba(201,168,76,.45);
+  border-color: rgba(201,168,76,.6);
+  box-shadow: 0 0 0 4px rgba(201,168,76,.08), 0 0 20px rgba(201,168,76,.3);
+  transform: scale(1.1);
 }
 
 /* SVG dans icon-box toujours or */
