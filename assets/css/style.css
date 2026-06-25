@@ -756,8 +756,8 @@ body:not(.scrolled-past-topbar) #header {
   margin-bottom: var(--s2);
   flex-shrink: 0;
   position: relative;
-  overflow: hidden;
-  transition: background .4s ease, border-color .4s ease, box-shadow .5s ease, transform .4s cubic-bezier(.22,1,.36,1);
+  overflow: hidden !important;
+  transition: background .4s ease, border-color .4s ease, box-shadow .5s ease, transform .4s cubic-bezier(.22,1,.36,1) !important;
 }
 
 /* Shimmer sweep au hover */
@@ -1146,6 +1146,17 @@ body:not(.scrolled-past-topbar) #header {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* card-hover + reveal : après l'entrée (.visible), activer les transitions hover */
+.card-hover.reveal.visible {
+  transition: opacity .7s ease, transform .4s cubic-bezier(.22,1,.36,1), box-shadow .4s ease, border-color .4s ease !important;
+}
+
+.card-hover.reveal.visible:hover {
+  border-color: rgba(201,168,76,.45) !important;
+  transform: translateY(-5px) !important;
+  box-shadow: 0 18px 44px rgba(0,0,0,.38), 0 0 28px rgba(201,168,76,.08) !important;
 }
 
 .reveal-delay-1 { transition-delay: .1s; }
