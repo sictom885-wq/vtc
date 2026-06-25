@@ -56,7 +56,7 @@ include 'includes/icons.php';
               ['M7 17l-4-4 4-4M17 7l4 4-4 4M14 3l-4 18',       'Éco-responsabilité','Mercedes Break hybride.'],
             ];
             foreach($valeurs as $v): ?>
-            <div style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3);">
+            <div class="card-hover" style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3);">
               <div class="icon-box" style="margin-bottom:var(--s2);">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $v[0] ?>"/></svg>
               </div>
