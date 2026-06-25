@@ -225,7 +225,7 @@ include 'includes/icons.php';
       <!-- Aéroports -->
       <div class="presta-card reveal reveal-delay-1">
         <div class="presta-img">
-          <img src="/assets/images/card-aeroport.svg" alt="Transfert aéroport VTC Carcassonne" width="400" height="280" loading="lazy">
+          <img src="/assets/images/card-aeroport.webp" alt="Transfert aéroport VTC Carcassonne" width="800" height="600" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
@@ -250,7 +250,7 @@ include 'includes/icons.php';
       <!-- Gares -->
       <div class="presta-card reveal reveal-delay-2">
         <div class="presta-img">
-          <img src="/assets/images/card-gare.svg" alt="Transfert gare VTC Carcassonne" width="400" height="280" loading="lazy">
+          <img src="/assets/images/card-gare.webp" alt="Transfert gare VTC Carcassonne" width="800" height="600" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
@@ -274,7 +274,7 @@ include 'includes/icons.php';
       <!-- Tourisme & Événements -->
       <div class="presta-card reveal reveal-delay-3">
         <div class="presta-img">
-          <img src="/assets/images/card-tourisme.svg" alt="Tourisme Occitanie VTC privé" width="400" height="280" loading="lazy">
+          <img src="/assets/images/card-tourisme.webp" alt="Tourisme Occitanie VTC privé" width="800" height="600" loading="lazy">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
