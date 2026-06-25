@@ -1,11 +1,12 @@
 <?php
-$lang = 'fr';
+$lang = 'en';
 $page = 'prestations';
-include 'includes/i18n.php';
-$t = vtc_t('fr');
-$meta = ['title'=>$t['ev_meta_title'],'desc'=>$t['ev_meta_desc'],'canonical'=>'https://www.audevtc.fr/evenements.php'];
-include 'includes/header.php';
-include 'includes/icons.php';
+$prefix = 'en/';
+include '../includes/i18n.php';
+$t = vtc_t('en');
+$meta = ['title'=>$t['ev_meta_title'],'desc'=>$t['ev_meta_desc'],'canonical'=>'https://www.audevtc.fr/en/evenements.php'];
+include '../includes/header.php';
+include '../includes/icons.php';
 ?>
 <main style="padding-top:160px;">
   <section style="position:relative;padding:var(--s12) 0;background:var(--noir-2);overflow:hidden;">
@@ -15,7 +16,7 @@ include 'includes/icons.php';
       <span class="gold-line"></span>
       <h1 class="section-title"><?= $t['ev_h1'] ?> <span><?= $t['ev_h1_em'] ?></span></h1>
       <p class="lead"><?= $t['ev_lead'] ?></p>
-      <div style="margin-top:var(--s4);"><a href="/contact.php" class="btn btn-primary"><?= $t['ta_cta_devis'] ?></a></div>
+      <div style="margin-top:var(--s4);"><a href="/en/contact.php" class="btn btn-primary"><?= $t['ta_cta_devis'] ?></a></div>
     </div>
   </section>
   <section class="section">
@@ -32,7 +33,7 @@ include 'includes/icons.php';
           <div class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $e[0] ?>"/></svg></div>
           <h3 class="presta-title"><?= $e[1] ?></h3>
           <p class="presta-desc"><?= $e[2] ?></p>
-          <a href="/contact.php" class="presta-link"><?= $t['ev_cta_quote'] ?> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          <a href="/en/contact.php" class="presta-link"><?= $t['ev_cta_quote'] ?> <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
         </div></div>
         <?php endforeach; ?>
       </div>
@@ -58,8 +59,8 @@ include 'includes/icons.php';
         <?php endforeach; ?>
       </div>
       <p style="font-size:.78rem;color:var(--gris-2);margin-top:var(--s3);text-align:center;"><?= $t['ev_tarif_note'] ?></p>
-      <div style="text-align:center;margin-top:var(--s6);"><a href="/contact.php" class="btn btn-primary"><?= $t['ev_cta_reserve'] ?></a></div>
+      <div style="text-align:center;margin-top:var(--s6);"><a href="/en/contact.php" class="btn btn-primary"><?= $t['ev_cta_reserve'] ?></a></div>
     </div>
   </section>
 </main>
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

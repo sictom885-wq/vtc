@@ -1,15 +1,16 @@
 <?php
-$lang = 'fr';
+$lang = 'de';
 $page = 'tarifs';
-include 'includes/i18n.php';
-$t = vtc_t('fr');
+$prefix = 'de/';
+include '../includes/i18n.php';
+$t = vtc_t('de');
 $meta = [
   'title'     => $t['tr_meta_title'],
   'desc'      => $t['tr_meta_desc'],
-  'canonical' => 'https://www.audevtc.fr/tarifs.php',
+  'canonical' => 'https://www.audevtc.fr/de/tarifs.php',
 ];
-include 'includes/header.php';
-include 'includes/icons.php';
+include '../includes/header.php';
+include '../includes/icons.php';
 ?>
 
 <main style="padding-top:160px;">
@@ -159,11 +160,11 @@ include 'includes/icons.php';
         </p>
       </div>
       <div style="text-align:center;margin-top:var(--s6);">
-        <a href="/contact.php" class="btn btn-primary" style="font-size:1rem;padding:16px 36px;"><?= $t['tr_cta'] ?></a>
+        <a href="/de/contact.php" class="btn btn-primary" style="font-size:1rem;padding:16px 36px;"><?= $t['tr_cta'] ?></a>
       </div>
     </div>
   </section>
 
 </main>
 
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

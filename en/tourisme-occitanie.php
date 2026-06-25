@@ -1,11 +1,12 @@
 <?php
-$lang = 'fr';
+$lang = 'en';
 $page = 'prestations';
-include 'includes/i18n.php';
-$t = vtc_t('fr');
-$meta = ['title'=>$t['to_meta_title'],'desc'=>$t['to_meta_desc'],'canonical'=>'https://www.audevtc.fr/tourisme-occitanie.php'];
-include 'includes/header.php';
-include 'includes/icons.php';
+$prefix = 'en/';
+include '../includes/i18n.php';
+$t = vtc_t('en');
+$meta = ['title'=>$t['to_meta_title'],'desc'=>$t['to_meta_desc'],'canonical'=>'https://www.audevtc.fr/en/tourisme-occitanie.php'];
+include '../includes/header.php';
+include '../includes/icons.php';
 $circuits = [
   ['titre'=>$t['to_c1_t'],'duree'=>$t['to_c1_dur'],'desc'=>$t['to_c1_d'],'img'=>'/assets/images/tourisme-carcassonne.webp','tarif'=>$t['to_c1_p']],
   ['titre'=>$t['to_c2_t'],'duree'=>$t['to_c2_dur'],'desc'=>$t['to_c2_d'],'img'=>'/assets/images/tourisme-canal.webp','tarif'=>$t['to_c2_p']],
@@ -21,7 +22,7 @@ $circuits = [
       <span class="gold-line"></span>
       <h1 class="section-title"><?= $t['to_h1'] ?> <span><?= $t['to_h1_em'] ?></span></h1>
       <p class="lead"><?= $t['to_lead'] ?></p>
-      <div style="margin-top:var(--s4);"><a href="/contact.php" class="btn btn-primary"><?= $t['to_cta_create'] ?></a></div>
+      <div style="margin-top:var(--s4);"><a href="/en/contact.php" class="btn btn-primary"><?= $t['to_cta_create'] ?></a></div>
     </div>
   </section>
   <section class="section">
@@ -41,7 +42,7 @@ $circuits = [
             <p class="presta-desc" style="font-size:.95rem;"><?= $c['desc'] ?></p>
             <div style="display:flex;align-items:center;justify-content:space-between;margin-top:var(--s4);">
               <span style="font-family:var(--font-display);font-size:1.5rem;color:var(--or);"><?= $c['tarif'] ?></span>
-              <a href="/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_book'] ?></a>
+              <a href="/en/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_book'] ?></a>
             </div>
           </div><?php endif; ?>
           <div style="position:relative;aspect-ratio:16/9;overflow:hidden;">
@@ -52,7 +53,7 @@ $circuits = [
               <p class="presta-desc" style="font-size:.95rem;"><?= $c['desc'] ?></p>
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:var(--s4);">
                 <span style="font-family:var(--font-display);font-size:1.5rem;color:var(--or);"><?= $c['tarif'] ?></span>
-                <a href="/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_book'] ?></a>
+                <a href="/en/contact.php" class="btn btn-primary" style="padding:10px 20px;font-size:.8rem;"><?= $t['to_book'] ?></a>
               </div>
             </div><?php endif; ?>
           </div>
@@ -68,8 +69,8 @@ $circuits = [
       <span class="gold-line" style="margin-inline:auto;"></span>
       <h2 class="section-title" style="font-size:clamp(1.8rem,3.5vw,3rem);"><?= $t['to_custom_h2'] ?> <span><?= $t['to_custom_h2_em'] ?></span></h2>
       <p class="lead" style="margin-inline:auto;margin-bottom:var(--s6);"><?= $t['to_custom_lead'] ?></p>
-      <a href="/contact.php" class="btn btn-primary"><?= $t['to_custom_cta'] ?></a>
+      <a href="/en/contact.php" class="btn btn-primary"><?= $t['to_custom_cta'] ?></a>
     </div>
   </section>
 </main>
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

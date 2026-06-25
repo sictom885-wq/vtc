@@ -1,11 +1,12 @@
 <?php
-$lang = 'fr';
+$lang = 'de';
 $page = 'prestations';
-include 'includes/i18n.php';
-$t = vtc_t('fr');
-$meta = ['title'=>$t['tg_meta_title'],'desc'=>$t['tg_meta_desc'],'canonical'=>'https://www.audevtc.fr/transferts-gare.php'];
-include 'includes/header.php';
-include 'includes/icons.php';
+$prefix = 'de/';
+include '../includes/i18n.php';
+$t = vtc_t('de');
+$meta = ['title'=>$t['tg_meta_title'],'desc'=>$t['tg_meta_desc'],'canonical'=>'https://www.audevtc.fr/de/transferts-gare.php'];
+include '../includes/header.php';
+include '../includes/icons.php';
 $gares = [
   ['nom'=>'Carcassonne','dist'=>'~3 km','duree'=>'~5 min','tarif'=>$t['ta_from'].' 20€'],
   ['nom'=>'Castelnaudary','dist'=>'~40 km','duree'=>'~35 min','tarif'=>$t['ta_from'].' 45€'],
@@ -23,7 +24,7 @@ $gares = [
       <span class="gold-line"></span>
       <h1 class="section-title"><?= $t['tg_h1'] ?> <span><?= $t['tg_h1_em'] ?></span></h1>
       <p class="lead"><?= $t['tg_lead'] ?></p>
-      <div style="margin-top:var(--s4);"><a href="/contact.php" class="btn btn-primary"><?= $t['ta_cta_devis'] ?></a></div>
+      <div style="margin-top:var(--s4);"><a href="/de/contact.php" class="btn btn-primary"><?= $t['ta_cta_devis'] ?></a></div>
     </div>
   </section>
   <section class="section">
@@ -77,7 +78,7 @@ $gares = [
         <?php endforeach; ?>
       </div>
       <p style="font-size:.78rem;color:var(--gris-2);margin-top:var(--s3);"><?= $t['tg_tarif_note'] ?></p>
-      <div style="margin-top:var(--s6);text-align:center;"><a href="/contact.php" class="btn btn-primary"><?= $t['tg_cta_book'] ?></a></div>
+      <div style="margin-top:var(--s6);text-align:center;"><a href="/de/contact.php" class="btn btn-primary"><?= $t['tg_cta_book'] ?></a></div>
     </div>
   </section>
   <section style="background:var(--or);padding:var(--s8) 0;">
@@ -87,10 +88,10 @@ $gares = [
         <p style="color:rgba(8,8,16,.7);margin-top:var(--s1);"><?= $t['tg_cta_sub'] ?></p>
       </div>
       <div style="display:flex;gap:var(--s2);">
-        <a href="/contact.php" class="btn" style="background:var(--noir);color:var(--blanc);"><?= $t['ta_cta_book'] ?></a>
+        <a href="/de/contact.php" class="btn" style="background:var(--noir);color:var(--blanc);"><?= $t['ta_cta_book'] ?></a>
         <a href="tel:+33610082007" class="btn" style="background:transparent;color:var(--noir);border:2px solid var(--noir);">06 10 08 20 07</a>
       </div>
     </div>
   </section>
 </main>
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
