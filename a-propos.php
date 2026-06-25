@@ -82,7 +82,7 @@ include 'includes/icons.php';
           ['3',     'Langues parlées',        'Français · Anglais · Allemand'],
         ];
         foreach($chiffres as $i => $c): ?>
-        <div class="reveal reveal-delay-<?= $i+1 ?>" style="background:var(--noir-3);border:1px solid rgba(201,168,76,.12);border-radius:var(--radius-lg);padding:var(--s6) var(--s3);">
+        <div class="card-hover reveal reveal-delay-<?= $i+1 ?>" style="background:var(--noir-3);border:1px solid rgba(201,168,76,.12);border-radius:var(--radius-lg);padding:var(--s6) var(--s3);">
           <div style="font-family:var(--font-display);font-size:3.5rem;font-weight:300;color:var(--or);line-height:1;"><?= $c[0] ?></div>
           <div style="font-weight:600;color:var(--blanc);font-size:.9rem;margin:var(--s2) 0 var(--s1);"><?= $c[1] ?></div>
           <div style="font-size:.78rem;color:var(--gris-1);"><?= $c[2] ?></div>
@@ -175,7 +175,7 @@ include 'includes/icons.php';
           ],
         ];
         foreach($engagements as $i => $eng): ?>
-        <div class="reveal reveal-delay-<?= ($i%3)+1 ?>" style="background:var(--noir-3);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s4);" >
+        <div class="card-hover reveal reveal-delay-<?= ($i%3)+1 ?>" style="background:var(--noir-3);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s4);">
           <div class="icon-box" style="margin-bottom:var(--s3);">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $eng[0] ?>"/></svg>
           </div>
@@ -222,7 +222,7 @@ include 'includes/icons.php';
           ['M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16', 'Bagages', 'Grand coffre — valises, poussettes, équipements'],
         ];
         foreach($specs as $i => $s): ?>
-        <div class="reveal reveal-delay-<?= ($i%3)+1 ?>" style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3) var(--s4);display:flex;gap:var(--s3);align-items:flex-start;">
+        <div class="card-hover reveal reveal-delay-<?= ($i%3)+1 ?>" style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3) var(--s4);display:flex;gap:var(--s3);align-items:flex-start;">
           <div class="icon-box" style="flex-shrink:0;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $s[0] ?>"/></svg>
           </div>
