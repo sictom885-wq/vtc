@@ -50,14 +50,16 @@ include 'includes/icons.php';
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);">
             <?php
             $valeurs = [
-              ['🎯','Ponctualité','Votre temps est précieux.'],
-              ['🤫','Discrétion','Vos affaires restent les vôtres.'],
-              ['🌿','Éco-responsabilité','Mercedes Break hybride.'],
-              ['🗣️','Trilingue','FR · EN · DE'],
+              ['M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z', 'Ponctualité',       'Votre temps est précieux.'],
+              ['M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z', 'Discrétion', 'Vos affaires restent les vôtres.'],
+              ['M12 2a10 10 0 1 0 0 20A10 10 0 0 0 12 2zM2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z', 'Trilingue',   'FR · EN · DE'],
+              ['M7 17l-4-4 4-4M17 7l4 4-4 4M14 3l-4 18',       'Éco-responsabilité','Mercedes Break hybride.'],
             ];
             foreach($valeurs as $v): ?>
             <div style="background:var(--noir-2);border:1px solid rgba(201,168,76,.1);border-radius:var(--radius-lg);padding:var(--s3);">
-              <div style="font-size:1.4rem;margin-bottom:var(--s1);"><?= $v[0] ?></div>
+              <div class="icon-box" style="margin-bottom:var(--s2);">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="<?= $v[0] ?>"/></svg>
+              </div>
               <div style="font-weight:600;color:var(--blanc);font-size:.9rem;margin-bottom:4px;"><?= $v[1] ?></div>
               <div style="font-size:.82rem;color:var(--gris-1);"><?= $v[2] ?></div>
             </div>
