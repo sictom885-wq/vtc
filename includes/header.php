@@ -257,7 +257,7 @@ endforeach;
     <div class="header-inner">
 
       <a href="/<?= $prefix ?>" class="logo" aria-label="AUDE VTC — Accueil">
-        <img src="/assets/images/logo-audevtc.webp" alt="AUDE VTC — Chauffeur Privé Carcassonne" width="72" height="72" loading="eager" decoding="async" style="display:block;">
+        <img src="/assets/images/logo-audevtc.webp" alt="AUDE VTC — Chauffeur Privé Carcassonne" width="160" height="160" loading="eager" decoding="async" style="display:block;">
       </a>
 
       <nav class="nav-menu" aria-label="Navigation principale">
