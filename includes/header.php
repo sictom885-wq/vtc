@@ -141,6 +141,46 @@ endforeach;
 ?>
   <script type="application/ld+json"><?= json_encode($_bc_json, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES) ?></script>
 <?php endif; ?>
+
+<?php if($page === 'index' || $page === ''): ?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AUDE VTC",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "16",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Anne Hodgins"},
+      "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+      "datePublished": "2025-06-01",
+      "reviewBody": "Fantastic service to and from the airport. On time, beautiful car, water provided and lots of interesting details on where to visit from Michael. Will be using again on our next visit to France."
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "C. Hohm"},
+      "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+      "datePublished": "2025-07-01",
+      "reviewBody": "J'ai fait appel à Michel dans le cadre d'un mariage organisé dans l'Aude afin d'assurer les allers et retours des convives durant le jour et la nuit. Service irréprochable, ponctuel et professionnel."
+    },
+    {
+      "@type": "Review",
+      "author": {"@type": "Person", "name": "Marie-Claire"},
+      "reviewRating": {"@type": "Rating", "ratingValue": "5"},
+      "datePublished": "2025-05-01",
+      "reviewBody": "Super service, ponctuel et connaisseur de la région. Conduite safe et agréable, je recommande vivement !"
+    }
+  ]
+}
+</script>
+<?php endif; ?>
   <title><?= htmlspecialchars($title) ?></title>
 
   <!-- Fonts -->

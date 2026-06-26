@@ -61,6 +61,7 @@ $year = date('Y');
         <ul class="footer-links">
           <li><a href="/a-propos.php">À Propos</a></li>
           <li><a href="/contact.php">Contact</a></li>
+          <li><a href="/blog/">Blog & Conseils</a></li>
           <li><a href="/mentions-legales.php">Mentions Légales</a></li>
           <li><a href="/politique-confidentialite.php">Confidentialité</a></li>
         </ul>
