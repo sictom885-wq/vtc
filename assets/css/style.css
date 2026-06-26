@@ -1499,10 +1499,16 @@ img:not([src]) {
   isolation: isolate;
 }
 
-/* ===== Espacement h3 sections éditoriales ===== */
+/* ===== H3 sections éditoriales longues ===== */
 .section .reveal h3,
 .section--dark .reveal h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--blanc);
+  letter-spacing: 0;
   margin-top: var(--s4);
+  margin-bottom: var(--s2);
 }
 .section .reveal:first-child h3,
 .section--dark .reveal:first-child h3 {
