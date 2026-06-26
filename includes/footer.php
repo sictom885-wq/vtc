@@ -12,9 +12,8 @@ $year = date('Y');
 
       <!-- Colonne Brand -->
       <div class="footer-brand">
-        <a href="/<?= $prefix ?>" class="logo">
-          <span class="logo-name">AUDE <span>VTC</span></span>
-          <span class="logo-sub">Chauffeur Privé · Occitanie</span>
+        <a href="/<?= $prefix ?>" class="logo" aria-label="AUDE VTC — Accueil">
+          <img src="/assets/images/logo-audevtc.webp" alt="AUDE VTC — Chauffeur Privé Carcassonne" width="80" height="80" loading="lazy" decoding="async" style="display:block;">
         </a>
         <p class="footer-desc">
           Votre chauffeur privé haut de gamme à Carcassonne et en Occitanie. Ponctualité, discrétion et confort à bord d'une Mercedes hybride.

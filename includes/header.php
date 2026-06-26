@@ -57,6 +57,9 @@ $prefix = ($lang === 'fr') ? '' : $lang . '/';
 <html lang="<?= htmlspecialchars($lang) ?>">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+  <link rel="icon" type="image/webp" sizes="32x32" href="/assets/images/logo-audevtc.webp">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.webp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= htmlspecialchars($desc) ?>">
   <meta name="robots" content="index,follow">
@@ -254,8 +257,7 @@ endforeach;
     <div class="header-inner">
 
       <a href="/<?= $prefix ?>" class="logo" aria-label="AUDE VTC — Accueil">
-        <span class="logo-name">AUDE <span>VTC</span></span>
-        <span class="logo-sub">Chauffeur Privé · Occitanie</span>
+        <img src="/assets/images/logo-audevtc.webp" alt="AUDE VTC — Chauffeur Privé Carcassonne" width="56" height="56" loading="eager" decoding="async" style="display:block;">
       </a>
 
       <nav class="nav-menu" aria-label="Navigation principale">
