@@ -733,6 +733,7 @@ body:not(.scrolled-past-topbar) #header {
   position: absolute;
   inset: 0;
   background: linear-gradient(to top, rgba(8,8,16,.7) 0%, transparent 60%);
+  pointer-events: none;
 }
 
 .presta-body {
@@ -861,6 +862,8 @@ body:not(.scrolled-past-topbar) #header {
   color: var(--or);
   margin-top: auto;
   transition: gap var(--transition);
+  position: relative;
+  z-index: 2;
 }
 
 .presta-link:hover { gap: 10px; }
@@ -1461,7 +1464,7 @@ img { max-width: 100%; height: auto; }
 .avis-card img, .presta-card img { aspect-ratio: 1; }
 
 /* Réduire layout shifts sur les cards */
-.presta-card, .avis-card, .card-hover {
+.avis-card, .card-hover {
   contain: layout style;
 }
 
@@ -1492,6 +1495,6 @@ img:not([src]) {
 }
 
 /* Optimisation paint : isolation des composants animés */
-.presta-card, .avis-card, .reveal {
+.avis-card, .reveal {
   isolation: isolate;
 }
