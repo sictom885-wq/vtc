@@ -1461,7 +1461,7 @@ body:not(.scrolled-past-topbar) #header {
 
 /* ===== Core Web Vitals — CLS prevention ===== */
 img { max-width: 100%; height: auto; }
-.avis-card img, .presta-card img { aspect-ratio: 1; }
+/* aspect-ratio: 1 supprimé — causait débordement sur tourisme-occitanie */
 
 /* Réduire layout shifts sur les cards */
 .avis-card, .card-hover {
