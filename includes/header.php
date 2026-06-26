@@ -113,6 +113,34 @@ foreach($_hreflang as $_hl => $_url):
   }
   </script>
 
+
+<?php
+/* ===== Breadcrumb Schema ===== */
+$_bc_items = [['AUDE VTC','https://www.audevtc.fr/']];
+if(!empty($page) && $page !== 'index') {
+  $_bc_labels = [
+    'contact'              => 'Contact',
+    'prestations'          => 'Prestations',
+    'tarifs'               => 'Tarifs',
+    'apropos'              => 'À Propos',
+    'transferts-aeroport'  => 'Transferts Aéroport',
+    'transferts-gare'      => 'Transferts Gare',
+    'tourisme-occitanie'   => 'Tourisme Occitanie',
+    'evenements'           => 'Événements',
+    'mentions-legales'     => 'Mentions Légales',
+  ];
+  $_bc_label = $_bc_labels[$page] ?? ucfirst($page);
+  $_bc_url   = 'https://www.audevtc.fr/' . ($lang !== 'fr' ? $lang.'/' : '') . $page . '.php';
+  $_bc_items[] = [$_bc_label, $_bc_url];
+}
+if(count($_bc_items) > 1):
+$_bc_json = ['@context'=>'https://schema.org','@type'=>'BreadcrumbList','itemListElement'=>[]];
+foreach($_bc_items as $_i => $_bc):
+  $_bc_json['itemListElement'][] = ['@type'=>'ListItem','position'=>$_i+1,'name'=>$_bc[0],'item'=>$_bc[1]];
+endforeach;
+?>
+  <script type="application/ld+json"><?= json_encode($_bc_json, JSON_UNESCAPED_UNICODE|JSON_UNESCAPED_SLASHES) ?></script>
+<?php endif; ?>
   <title><?= htmlspecialchars($title) ?></title>
 
   <!-- Fonts -->
