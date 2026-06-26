@@ -84,6 +84,61 @@ $gares = [
       <div style="margin-top:var(--s6);text-align:center;"><a href="/contact.php" class="btn btn-primary"><?= $t['tg_cta_book'] ?></a></div>
     </div>
   </section>
+  <section class="section">
+    <div class="container" style="max-width:860px;margin-inline:auto;">
+      <div class="reveal" style="margin-bottom:var(--s6);">
+        <span class="eyebrow">Chauffeur privé gare</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">VTC Gare : <span>confort et ponctualité</span></h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:var(--s5);color:var(--gris-1);line-height:1.8;font-size:.95rem;">
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Accueil sur quai, sans stress</h3>
+          <p>Votre chauffeur vous attend directement sur le quai ou dans le hall de la gare, panneau nominatif en main. Pas besoin de chercher un taxi, de porter vos bagages loin ou d'attendre sous la pluie. AUDE VTC coordonne votre prise en charge avec les horaires SNCF en temps réel.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Suivi SNCF en temps réel</h3>
+          <p>Train retardé ? Michel Richard le sait avant vous et ajuste son heure d'arrivée en conséquence — sans appel de votre part. Le tarif fixe ne change pas, quelle que soit la durée du retard.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Gares desservies depuis Carcassonne</h3>
+          <p>AUDE VTC prend en charge vos transferts vers et depuis les gares de <strong>Carcassonne</strong>, <strong>Narbonne</strong>, <strong>Toulouse Matabiau</strong>, <strong>Montpellier Saint-Roch</strong> et <strong>Perpignan</strong>. Pour les départs depuis votre domicile, la prise en charge s'effectue directement à votre adresse dans un rayon de 20 km autour de Carcassonne.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Idéal pour les déplacements professionnels</h3>
+          <p>Séminaires, réunions client, déplacements en TGV : AUDE VTC s'intègre parfaitement dans votre agenda professionnel. Wi-Fi, chargeurs USB et discrétion à bord vous permettent de travailler ou vous détendre jusqu'à destination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section section--dark">
+    <div class="container" style="max-width:800px;margin-inline:auto;">
+      <div class="reveal" style="margin-bottom:var(--s6);">
+        <span class="eyebrow">Questions fréquentes</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">Transfert gare <span>en VTC</span></h2>
+      </div>
+      <?php $faq_gare=[
+        ['Quelles gares desservez-vous ?','Carcassonne, Narbonne, Toulouse Matabiau, Montpellier Saint-Roch et Perpignan. D'autres gares accessibles sur devis.'],
+        ['Le chauffeur attend-il si mon train est en retard ?','Oui. Michel Richard suit les horaires SNCF en temps réel. Aucun frais supplémentaire en cas de retard.'],
+        ['Peut-on réserver un VTC aller-retour gare ?','Oui. AUDE VTC assure les trajets aller et retour. Précisez les deux horaires à la réservation.'],
+        ['Y a-t-il un accueil personnalisé à la gare ?','Oui. Votre chauffeur vous attend dans le hall avec un panneau nominatif et prend en charge vos bagages.'],
+      ]; foreach($faq_gare as $qa): ?>
+      <div class="reveal" style="border-bottom:1px solid rgba(201,168,76,.1);padding:var(--s4) 0;">
+        <h3 style="font-size:1rem;font-weight:600;color:var(--blanc);margin-bottom:var(--s2);"><?=$qa[0]?></h3>
+        <p style="font-size:.9rem;color:var(--gris-1);line-height:1.7;"><?=$qa[1]?></p>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+<?php foreach($faq_gare as $i=>$qa): ?>
+{"@type":"Question","name":"<?=addslashes($qa[0])?>","acceptedAnswer":{"@type":"Answer","text":"<?=addslashes($qa[1])?>"}}<?=$i<count($faq_gare)-1?',':''?>
+<?php endforeach; ?>
+]}
+</script>
+
   <section style="background:var(--or);padding:var(--s8) 0;">
     <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s4);">
       <div>
@@ -97,4 +152,36 @@ $gares = [
     </div>
   </section>
 </main>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Transfert VTC Gare",
+  "description": "Service de transfert VTC depuis et vers les gares de Carcassonne, Narbonne et Toulouse Matabiau. Accueil sur quai, suivi SNCF en temps réel, tarif fixe.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "AUDE VTC",
+    "telephone": "+33610082007",
+    "url": "https://www.audevtc.fr"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Carcassonne, Aude, Occitanie"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "20",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "20",
+      "priceCurrency": "EUR",
+      "description": "À partir de"
+    }
+  },
+  "serviceType": "Chauffeur privé VTC"
+}
+</script>
 <?php include 'includes/footer.php'; ?>

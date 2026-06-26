@@ -66,6 +66,81 @@ $aeroports = [
       <div style="margin-top:var(--s6);text-align:center;"><a href="/contact.php" class="btn btn-primary"><?= $t['ta_cta_exact'] ?></a></div>
     </div>
   </section>
+  <!-- SECTION EDITORIALE LONGUE -->
+  <section class="section">
+    <div class="container" style="max-width:860px;margin-inline:auto;">
+      <div class="reveal" style="margin-bottom:var(--s6);">
+        <span class="eyebrow">Votre chauffeur privé aéroport</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">Pourquoi choisir <span>AUDE VTC</span> pour vos transferts aéroport ?</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:var(--s5);color:var(--gris-1);line-height:1.8;font-size:.95rem;">
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Un tarif fixe, zéro mauvaise surprise</h3>
+          <p>Contrairement à un taxi classique dont le compteur tourne selon la circulation, AUDE VTC vous communique le prix exact avant la course. Que votre vol soit retardé d'une heure ou que l'autoroute soit encombrée, le tarif affiché est le tarif payé. C'est la promesse fondamentale d'un service VTC haut de gamme : la transparence totale.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Suivi de vol en temps réel</h3>
+          <p>Michel Richard surveille l'état de votre vol depuis son tableau de bord. En cas de retard, l'heure de prise en charge est automatiquement ajustée — sans appel de votre part, sans frais supplémentaires. À l'atterrissage, vous trouvez votre chauffeur dans le hall des arrivées, panneau nominatif en main, prêt à prendre en charge vos bagages.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Un véhicule à la hauteur de vos exigences</h3>
+          <p>Berline Mercedes hybride, intérieur en cuir, climatisation individuelle, chargeurs USB et Wi-Fi à bord. Que vous soyez seul pour un déplacement professionnel ou en famille avec des bagages volumineux, le confort est au rendez-vous. Un van 7 places est également disponible sur demande pour les groupes.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Disponibilité 24h/24, 7j/7</h3>
+          <p>Vols tôt le matin, retours tardifs, départs en week-end : AUDE VTC s'adapte à votre programme, pas l'inverse. La réservation s'effectue en ligne ou par téléphone, avec confirmation sous 2 heures. Aucun supplément de nuit ni de week-end.</p>
+        </div>
+        <div class="reveal">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;color:var(--blanc);margin-bottom:var(--s2);">Basé à Carcassonne, rayonnant sur toute l'Aude</h3>
+          <p>Depuis Carcassonne, Michel Richard dessert l'ensemble du département de l'Aude et les communes environnantes : Trèbes, Limoux, Castelnaudary, Narbonne, Lézignan-Corbières, Alzonne, Bram, Saissac, Fanjeaux. Pas de frais de déplacement supplémentaires dans un rayon de 20 km autour de Carcassonne.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ aéroport -->
+  <section class="section section--dark">
+    <div class="container" style="max-width:800px;margin-inline:auto;">
+      <div class="reveal" style="margin-bottom:var(--s6);">
+        <span class="eyebrow">Questions fréquentes</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">Transfert aéroport <span>en VTC</span></h2>
+      </div>
+      <?php
+      $faq_aero = [
+        ['Comment réserver mon transfert aéroport ?', 'Via le formulaire de contact en ligne ou par téléphone au 06 10 08 20 07. Précisez votre aéroport de destination, la date, l'heure et le nombre de passagers. Confirmation sous 2h.'],
+        ['Quels aéroports desservez-vous depuis Carcassonne ?', 'AUDE VTC dessert principalement Toulouse Blagnac (TLS), Carcassonne (CCF), Montpellier (MPL), Perpignan (PGF) et Bordeaux Mérignac (BOD). D'autres aéroports sont accessibles sur devis.'],
+        ['Le tarif inclut-il l'attente en cas de retard de vol ?', 'Oui. Le temps d'attente lié à un retard de vol est inclus dans le tarif fixe. Votre chauffeur surveille votre vol en temps réel.'],
+        ['Peut-on voyager avec des animaux de compagnie ?', 'Oui, sous réserve de le mentionner à la réservation. Les animaux doivent être dans une caisse de transport.'],
+        ['Y a-t-il un supplément pour les bagages ?', 'Non. Le tarif fixe inclut les bagages standards. Pour des équipements exceptionnels (ski, vélo), merci de le préciser à la réservation.'],
+      ];
+      foreach($faq_aero as $qa): ?>
+      <div class="reveal" style="border-bottom:1px solid rgba(201,168,76,.1);padding:var(--s4) 0;">
+        <h3 style="font-size:1rem;font-weight:600;color:var(--blanc);margin-bottom:var(--s2);"><?= $qa[0] ?></h3>
+        <p style="font-size:.9rem;color:var(--gris-1);line-height:1.7;"><?= $qa[1] ?></p>
+      </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+
+<?php
+// FAQ Schema pour la page aéroport
+$faq_schema = [
+  ['Comment réserver mon transfert aéroport ?', 'Via le formulaire de contact en ligne ou par téléphone au 06 10 08 20 07. Confirmation sous 2h.'],
+  ['Quels aéroports desservez-vous depuis Carcassonne ?', 'AUDE VTC dessert Toulouse Blagnac (TLS), Carcassonne (CCF), Montpellier (MPL), Perpignan (PGF) et Bordeaux Mérignac (BOD).'],
+  ['Le tarif inclut-il l'attente en cas de retard de vol ?', 'Oui. Le temps d'attente lié à un retard de vol est inclus dans le tarif fixe.'],
+  ['Y a-t-il un supplément pour les bagages ?', 'Non. Le tarif fixe inclut les bagages standards.'],
+];
+?>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+<?php foreach($faq_schema as $i=>$qa): ?>
+{"@type":"Question","name":"<?= addslashes($qa[0]) ?>","acceptedAnswer":{"@type":"Answer","text":"<?= addslashes($qa[1]) ?>"}}<?= $i<count($faq_schema)-1?',':'' ?>
+<?php endforeach; ?>
+]}
+</script>
+
   <section style="background:var(--or);padding:var(--s8) 0;">
     <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s4);">
       <div>
@@ -79,4 +154,36 @@ $aeroports = [
     </div>
   </section>
 </main>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Transfert VTC Aéroport",
+  "description": "Service de transfert en véhicule de tourisme avec chauffeur (VTC) depuis et vers les aéroports de Toulouse Blagnac, Carcassonne, Montpellier, Perpignan et Bordeaux. Tarif fixe, Mercedes hybride, disponible 24h/7j.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "AUDE VTC",
+    "telephone": "+33610082007",
+    "url": "https://www.audevtc.fr"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Carcassonne, Aude, Occitanie"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "25",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "25",
+      "priceCurrency": "EUR",
+      "description": "À partir de"
+    }
+  },
+  "serviceType": "Chauffeur privé VTC"
+}
+</script>
 <?php include 'includes/footer.php'; ?>

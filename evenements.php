@@ -62,4 +62,36 @@ include 'includes/icons.php';
     </div>
   </section>
 </main>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Transport VTC Événements & Entreprises",
+  "description": "Service de transport privé pour mariages, séminaires, soirées d'entreprise et événements en Occitanie. Discrétion, ponctualité, véhicule haut de gamme.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "AUDE VTC",
+    "telephone": "+33610082007",
+    "url": "https://www.audevtc.fr"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Carcassonne, Aude, Occitanie"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "80",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "80",
+      "priceCurrency": "EUR",
+      "description": "À partir de"
+    }
+  },
+  "serviceType": "Chauffeur privé VTC"
+}
+</script>
 <?php include 'includes/footer.php'; ?>

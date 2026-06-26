@@ -166,4 +166,36 @@ include 'includes/icons.php';
 
 </main>
 
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Tarifs VTC AUDE VTC",
+  "description": "Grille tarifaire transparente pour tous les services de chauffeur privé AUDE VTC. Tarifs fixes garantis pour transferts aéroports, gares, tourisme et événements.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "AUDE VTC",
+    "telephone": "+33610082007",
+    "url": "https://www.audevtc.fr"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Carcassonne, Aude, Occitanie"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "20",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "20",
+      "priceCurrency": "EUR",
+      "description": "À partir de"
+    }
+  },
+  "serviceType": "Chauffeur privé VTC"
+}
+</script>
 <?php include 'includes/footer.php'; ?>

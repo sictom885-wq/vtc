@@ -73,4 +73,36 @@ $circuits = [
     </div>
   </section>
 </main>
+
+<!-- Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Tourisme & Circuits Occitanie",
+  "description": "Circuits touristiques privés en Occitanie : Cité de Carcassonne, Châteaux Cathares, Canal du Midi, vignobles du Languedoc. Chauffeur-guide bilingue, véhicule premium.",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "AUDE VTC",
+    "telephone": "+33610082007",
+    "url": "https://www.audevtc.fr"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Carcassonne, Aude, Occitanie, Pyrénées"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "80",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": "80",
+      "priceCurrency": "EUR",
+      "description": "À partir de"
+    }
+  },
+  "serviceType": "Chauffeur privé VTC"
+}
+</script>
 <?php include 'includes/footer.php'; ?>
