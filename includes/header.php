@@ -59,7 +59,25 @@ $prefix = ($lang === 'fr') ? '' : $lang . '/';
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="<?= htmlspecialchars($desc) ?>">
+  <meta name="robots" content="index,follow">
   <link rel="canonical" href="<?= htmlspecialchars($canonical) ?>">
+<?php
+/* ===== hreflang dynamiques ===== */
+// Déduire le slug depuis $canonical ou $page
+$_slug = basename(parse_url($canonical, PHP_URL_PATH));
+if($_slug === '' || $_slug === 'audevtc.fr') $_slug = 'index.php';
+// Construire les URLs par langue
+$_base = 'https://www.audevtc.fr/';
+$_hreflang = [
+  'fr' => $_base . $_slug,
+  'en' => $_base . 'en/' . $_slug,
+  'de' => $_base . 'de/' . $_slug,
+  'x-default' => $_base . $_slug,
+];
+foreach($_hreflang as $_hl => $_url):
+?>
+  <link rel="alternate" hreflang="<?= $_hl ?>" href="<?= htmlspecialchars($_url) ?>">
+<?php endforeach; ?>
 
   <!-- Open Graph -->
   <meta property="og:title"       content="<?= htmlspecialchars($title) ?>">

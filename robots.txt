@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /includes/
+Disallow: /assets/
+
+Sitemap: https://www.audevtc.fr/sitemap.xml
