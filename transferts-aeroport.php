@@ -155,6 +155,33 @@ $faq_schema = [
   </section>
 </main>
 
+
+  <!-- Maillage interne villes -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:var(--s4);">
+        <span class="eyebrow">Zone de desserte</span>
+        <span class="gold-line"></span>
+        <h2 class="section-title">VTC aéroport depuis <span>toute l'Aude</span></h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--s3);">
+        <?php foreach([
+          ['Narbonne','/villes/vtc-narbonne.php','~60 km · dès 65€'],
+          ['Limoux','/villes/vtc-limoux.php','~25 km · dès 35€'],
+          ['Castelnaudary','/villes/vtc-castelnaudary.php','~45 km · dès 50€'],
+          ['Lézignan-Corbières','/villes/vtc-lezignan-corbieres.php','~40 km · dès 50€'],
+          ['Bram','/villes/vtc-bram.php','~20 km · dès 30€'],
+          ['Alzonne','/villes/vtc-alzonne.php','~15 km · dès 25€'],
+        ] as $ville): ?>
+        <a href="<?=$ville[1]?>" class="reveal" style="display:block;background:var(--noir-2);border:1px solid rgba(201,168,76,.12);border-radius:var(--radius-lg);padding:var(--s3) var(--s4);text-decoration:none;transition:border-color var(--transition);" onmouseover="this.style.borderColor='rgba(201,168,76,.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,.12)'">
+          <div style="font-weight:600;color:var(--blanc);margin-bottom:4px;"><?=$ville[0]?></div>
+          <div style="font-size:.8rem;color:var(--or);"><?=$ville[2]?></div>
+        </a>
+        <?php endforeach; ?>
+      </div>
+    </div>
+  </section>
+
 <!-- Service Schema -->
 <script type="application/ld+json">
 {
