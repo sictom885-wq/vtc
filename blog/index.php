@@ -6,8 +6,8 @@ include 'includes/header.php';
 include 'includes/icons.php';
 $articles=[
   ['comment-aller-cite-carcassonne.php','Guide pratique','Comment aller à la Cité de Carcassonne ? Toutes les options','Toutes les façons de rejoindre la Cité médiévale : VTC, navette, à pied. Conseils pratiques et tarifs.','10 juin 2025'],
-  ['taxi-ou-vtc-carcassonne-differences.php','Comparatif','Taxi ou VTC à Carcassonne : quelle différence ?','Prix, disponibilité, confort : tout ce qu'il faut savoir pour choisir entre taxi et VTC dans l'Aude.','22 mai 2025'],
-  ['prix-carcassonne-toulouse-vtc.php','Tarifs','Prix d'un VTC Carcassonne – Toulouse : tout ce qu'il faut savoir','Tarif fixe 95€, ce qui est inclus, comment réserver. Le guide complet du transfert Carcassonne – Toulouse Blagnac.','5 juin 2025'],
+  ['taxi-ou-vtc-carcassonne-differences.php','Comparatif','Taxi ou VTC à Carcassonne : quelle différence ?','Prix, disponibilité, confort : tout ce qu\'il faut savoir pour choisir entre taxi et VTC dans l\'Aude.','22 mai 2025'],
+  ['prix-carcassonne-toulouse-vtc.php','Tarifs','Prix d\'un VTC Carcassonne – Toulouse : tout ce qu\'il faut savoir','Tarif fixe 95€, ce qui est inclus, comment réserver. Le guide complet du transfert Carcassonne – Toulouse Blagnac.','5 juin 2025'],
   ['visiter-chateaux-cathares-vtc.php','Tourisme','Visiter les châteaux cathares en VTC depuis Carcassonne','Peyrepertuse, Quéribus, Puilaurens : comment découvrir les châteaux cathares en circuit privé avec AUDE VTC.','15 juin 2025'],
 ];
 ?>

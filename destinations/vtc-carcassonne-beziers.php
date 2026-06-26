@@ -1,7 +1,7 @@
 <?php
 $lang='fr';$page='prestations';$prefix='';
 include '../includes/i18n.php';$t=vtc_t('fr');
-$meta=['title'=>'VTC Carcassonne → Béziers Cap d'Agde (BZR) — AUDE VTC | Tarif fixe dès 110€','desc'=>'Transfert VTC Carcassonne – Aéroport Béziers Cap d'Agde. 85 km, ~1h. Tarif fixe 110€, Mercedes hybride, suivi de vol.','canonical'=>'https://www.audevtc.fr/destinations/vtc-carcassonne-beziers.php'];
+$meta=['title'=>'VTC Carcassonne → Béziers Cap d\'Agde (BZR) — AUDE VTC | Tarif fixe dès 110€','desc'=>'Transfert VTC Carcassonne – Aéroport Béziers Cap d\'Agde. 85 km, ~1h. Tarif fixe 110€, Mercedes hybride, suivi de vol.','canonical'=>'https://www.audevtc.fr/destinations/vtc-carcassonne-beziers.php'];
 include '../includes/header.php';
 include '../includes/icons.php';
 $faq_dest=[

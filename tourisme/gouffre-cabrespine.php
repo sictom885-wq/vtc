@@ -1,7 +1,7 @@
 <?php
 $lang='fr';$page='prestations';$prefix='';
 include '../includes/i18n.php';$t=vtc_t('fr');
-$meta=['title'=>'VTC Gouffre de Cabrespine depuis Carcassonne — AUDE VTC','desc'=>'Transfert VTC vers le Gouffre de Cabrespine depuis Carcassonne. 30 km, tarif fixe, idéal en famille. Mercedes hybride, disponible toute l'année.','canonical'=>'https://www.audevtc.fr/tourisme/gouffre-cabrespine.php'];
+$meta=['title'=>'VTC Gouffre de Cabrespine depuis Carcassonne — AUDE VTC','desc'=>'Transfert VTC vers le Gouffre de Cabrespine depuis Carcassonne. 30 km, tarif fixe, idéal en famille. Mercedes hybride, disponible toute l\'année.','canonical'=>'https://www.audevtc.fr/tourisme/gouffre-cabrespine.php'];
 include '../includes/header.php';
 include '../includes/icons.php';
 $faq_t=[

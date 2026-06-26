@@ -1,7 +1,7 @@
 <?php
 $lang='fr';$page='prestations';$prefix='';
 include '../includes/i18n.php';$t=vtc_t('fr');
-$meta=['title'=>'Prix VTC Carcassonne – Toulouse Blagnac : tarif fixe, durée, conseils','desc'=>'Tout sur le prix d'un VTC entre Carcassonne et l'aéroport de Toulouse Blagnac : tarif fixe 95€, durée ~1h, ce qui est inclus. AUDE VTC.','canonical'=>'https://www.audevtc.fr/blog/prix-carcassonne-toulouse-vtc.php'];
+$meta=['title'=>'Prix VTC Carcassonne – Toulouse Blagnac : tarif fixe, durée, conseils','desc'=>'Tout sur le prix d\'un VTC entre Carcassonne et l\'aéroport de Toulouse Blagnac : tarif fixe 95€, durée ~1h, ce qui est inclus. AUDE VTC.','canonical'=>'https://www.audevtc.fr/blog/prix-carcassonne-toulouse-vtc.php'];
 include '../includes/header.php';
 include '../includes/icons.php';
 $faq_blog=[  ['Le tarif 95€ est-il valable à toute heure ?', 'Oui. Aucune majoration de nuit, week-end ou jour férié. Le tarif de 95€ est fixe quelle que soit l\'heure.'],

@@ -37,7 +37,7 @@ $faq_ville=[
         <?php endforeach; ?>
       </div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3);">
-        <?php foreach([['Prise en charge à domicile','Michel Richard vient vous chercher directement à votre adresse. Aucun déplacement jusqu'à un point de ramassage.'],['Tarif fixe garanti','Prix arrêté avant le départ. Aucun compteur, aucune surprise.'],['24h/7j sans majoration','Week-ends, jours fériés, nuit — au même tarif fixe.']] as $i=>$av): ?>
+        <?php foreach([['Prise en charge à domicile','Michel Richard vient vous chercher directement à votre adresse. Aucun déplacement jusqu\'à un point de ramassage.'],['Tarif fixe garanti','Prix arrêté avant le départ. Aucun compteur, aucune surprise.'],['24h/7j sans majoration','Week-ends, jours fériés, nuit — au même tarif fixe.']] as $i=>$av): ?>
         <div class="presta-card reveal reveal-delay-<?=$i+1?>" style="padding:0;"><div class="presta-body">
           <div class="icon-box"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0 1 12 2.944a11.955 11.955 0 0 1-8.618 3.04A12.02 12.02 0 0 0 3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg></div>
           <h3 class="presta-title" style="font-size:1.1rem;"><?=$av[0]?></h3>

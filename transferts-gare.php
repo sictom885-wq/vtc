@@ -119,7 +119,7 @@ $gares = [
         <h2 class="section-title">Transfert gare <span>en VTC</span></h2>
       </div>
       <?php $faq_gare=[
-        ['Quelles gares desservez-vous ?','Carcassonne, Narbonne, Toulouse Matabiau, Montpellier Saint-Roch et Perpignan. D'autres gares accessibles sur devis.'],
+        ['Quelles gares desservez-vous ?','Carcassonne, Narbonne, Toulouse Matabiau, Montpellier Saint-Roch et Perpignan. D\'autres gares accessibles sur devis.'],
         ['Le chauffeur attend-il si mon train est en retard ?','Oui. Michel Richard suit les horaires SNCF en temps réel. Aucun frais supplémentaire en cas de retard.'],
         ['Peut-on réserver un VTC aller-retour gare ?','Oui. AUDE VTC assure les trajets aller et retour. Précisez les deux horaires à la réservation.'],
         ['Y a-t-il un accueil personnalisé à la gare ?','Oui. Votre chauffeur vous attend dans le hall avec un panneau nominatif et prend en charge vos bagages.'],

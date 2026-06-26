@@ -109,9 +109,9 @@ $aeroports = [
       </div>
       <?php
       $faq_aero = [
-        ['Comment réserver mon transfert aéroport ?', 'Via le formulaire de contact en ligne ou par téléphone au 06 10 08 20 07. Précisez votre aéroport de destination, la date, l'heure et le nombre de passagers. Confirmation sous 2h.'],
-        ['Quels aéroports desservez-vous depuis Carcassonne ?', 'AUDE VTC dessert principalement Toulouse Blagnac (TLS), Carcassonne (CCF), Montpellier (MPL), Perpignan (PGF) et Bordeaux Mérignac (BOD). D'autres aéroports sont accessibles sur devis.'],
-        ['Le tarif inclut-il l'attente en cas de retard de vol ?', 'Oui. Le temps d'attente lié à un retard de vol est inclus dans le tarif fixe. Votre chauffeur surveille votre vol en temps réel.'],
+        ['Comment réserver mon transfert aéroport ?', 'Via le formulaire de contact en ligne ou par téléphone au 06 10 08 20 07. Précisez votre aéroport de destination, la date, l\'heure et le nombre de passagers. Confirmation sous 2h.'],
+        ['Quels aéroports desservez-vous depuis Carcassonne ?', 'AUDE VTC dessert principalement Toulouse Blagnac (TLS), Carcassonne (CCF), Montpellier (MPL), Perpignan (PGF) et Bordeaux Mérignac (BOD). D\'autres aéroports sont accessibles sur devis.'],
+        ['Le tarif inclut-il l\'attente en cas de retard de vol ?', 'Oui. Le temps d\'attente lié à un retard de vol est inclus dans le tarif fixe. Votre chauffeur surveille votre vol en temps réel.'],
         ['Peut-on voyager avec des animaux de compagnie ?', 'Oui, sous réserve de le mentionner à la réservation. Les animaux doivent être dans une caisse de transport.'],
         ['Y a-t-il un supplément pour les bagages ?', 'Non. Le tarif fixe inclut les bagages standards. Pour des équipements exceptionnels (ski, vélo), merci de le préciser à la réservation.'],
       ];
@@ -129,7 +129,7 @@ $aeroports = [
 $faq_schema = [
   ['Comment réserver mon transfert aéroport ?', 'Via le formulaire de contact en ligne ou par téléphone au 06 10 08 20 07. Confirmation sous 2h.'],
   ['Quels aéroports desservez-vous depuis Carcassonne ?', 'AUDE VTC dessert Toulouse Blagnac (TLS), Carcassonne (CCF), Montpellier (MPL), Perpignan (PGF) et Bordeaux Mérignac (BOD).'],
-  ['Le tarif inclut-il l'attente en cas de retard de vol ?', 'Oui. Le temps d'attente lié à un retard de vol est inclus dans le tarif fixe.'],
+  ['Le tarif inclut-il l\'attente en cas de retard de vol ?', 'Oui. Le temps d\'attente lié à un retard de vol est inclus dans le tarif fixe.'],
   ['Y a-t-il un supplément pour les bagages ?', 'Non. Le tarif fixe inclut les bagages standards.'],
 ];
 ?>

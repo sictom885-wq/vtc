@@ -1,7 +1,7 @@
 <?php
 $lang='fr';$page='prestations';$prefix='';
 include '../includes/i18n.php';$t=vtc_t('fr');
-$meta=['title'=>'VTC Abbaye de Fontfroide depuis Carcassonne — AUDE VTC','desc'=>'Transfert VTC vers l'Abbaye de Fontfroide depuis Carcassonne. 40 km, tarif fixe, Mercedes hybride. Idéal pour une visite culturelle dans les Corbières.','canonical'=>'https://www.audevtc.fr/tourisme/abbaye-fontfroide.php'];
+$meta=['title'=>'VTC Abbaye de Fontfroide depuis Carcassonne — AUDE VTC','desc'=>'Transfert VTC vers l\'Abbaye de Fontfroide depuis Carcassonne. 40 km, tarif fixe, Mercedes hybride. Idéal pour une visite culturelle dans les Corbières.','canonical'=>'https://www.audevtc.fr/tourisme/abbaye-fontfroide.php'];
 include '../includes/header.php';
 include '../includes/icons.php';
 $faq_t=[

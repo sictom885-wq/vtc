@@ -1,7 +1,7 @@
 <?php
 $lang='fr';$page='prestations';$prefix='';
 include '../includes/i18n.php';$t=vtc_t('fr');
-$meta=['title'=>'Taxi ou VTC à Carcassonne : différences, tarifs et lequel choisir','desc'=>'Taxi vs VTC à Carcassonne : prix, disponibilité, confort — tout ce qu'il faut savoir pour choisir la bonne option dans l'Aude.','canonical'=>'https://www.audevtc.fr/blog/taxi-ou-vtc-carcassonne-differences.php'];
+$meta=['title'=>'Taxi ou VTC à Carcassonne : différences, tarifs et lequel choisir','desc'=>'Taxi vs VTC à Carcassonne : prix, disponibilité, confort — tout ce qu\'il faut savoir pour choisir la bonne option dans l\'Aude.','canonical'=>'https://www.audevtc.fr/blog/taxi-ou-vtc-carcassonne-differences.php'];
 include '../includes/header.php';
 include '../includes/icons.php';
 $faq_blog=[  ['Peut-on réserver un VTC le jour même à Carcassonne ?', 'Oui. AUDE VTC accepte les réservations le jour même, sous réserve de disponibilité. Nous recommandons de réserver au moins 2h à l\'avance.'],
