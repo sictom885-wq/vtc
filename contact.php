@@ -8,6 +8,12 @@ $page  = 'contact';
 $sent  = false;
 $error = false;
 
+/* Pré-remplissage depuis les paramètres GET (formulaire index) */
+$_pre = [];
+foreach(['depart','arrivee','date','heure','allerretour','nom','telephone','email','message'] as $_k) {
+  $_pre[$_k] = trim($_GET[$_k] ?? '');
+}
+
 /* === TRAITEMENT POST === */
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $depart     = trim($_POST['depart']     ?? '');
@@ -149,41 +155,41 @@ include 'includes/icons.php';
             <div class="form-grid">
               <div class="form-group">
                 <label for="depart">Départ</label>
-                <input type="text" id="depart" name="depart" placeholder="Adresse, ville…" value="<?= htmlspecialchars($_POST['depart'] ?? '') ?>">
+                <input type="text" id="depart" name="depart" placeholder="Adresse, ville…" value="<?= htmlspecialchars($_POST['depart'] ?? $_pre['depart']) ?>">
               </div>
               <div class="form-group">
                 <label for="arrivee">Arrivée</label>
-                <input type="text" id="arrivee" name="arrivee" placeholder="Aéroport, gare, hôtel…" value="<?= htmlspecialchars($_POST['arrivee'] ?? '') ?>">
+                <input type="text" id="arrivee" name="arrivee" placeholder="Aéroport, gare, hôtel…" value="<?= htmlspecialchars($_POST['arrivee'] ?? $_pre['arrivee']) ?>">
               </div>
               <div class="form-group">
                 <label for="date">Date souhaitée</label>
-                <input type="date" id="date" name="date" value="<?= htmlspecialchars($_POST['date'] ?? '') ?>">
+                <input type="date" id="date" name="date" value="<?= htmlspecialchars($_POST['date'] ?? $_pre['date']) ?>">
               </div>
               <div class="form-group">
                 <label for="heure">Heure de prise en charge</label>
-                <input type="time" id="heure" name="heure" value="<?= htmlspecialchars($_POST['heure'] ?? '') ?>">
+                <input type="time" id="heure" name="heure" value="<?= htmlspecialchars($_POST['heure'] ?? $_pre['heure']) ?>">
               </div>
               <div class="form-group" style="grid-column:1/-1;">
                 <label class="form-check">
-                  <input type="checkbox" name="allerretour" value="1" <?= isset($_POST['allerretour']) ? 'checked' : '' ?>>
+                  <input type="checkbox" name="allerretour" value="1" <?= (isset($_POST['allerretour']) || !empty($_pre['allerretour'])) ? 'checked' : '' ?>>
                   Aller / Retour
                 </label>
               </div>
               <div class="form-group">
                 <label for="nom">Nom complet <span style="color:var(--or);">*</span></label>
-                <input type="text" id="nom" name="nom" required value="<?= htmlspecialchars($_POST['nom'] ?? '') ?>">
+                <input type="text" id="nom" name="nom" required value="<?= htmlspecialchars($_POST['nom'] ?? $_pre['nom']) ?>">
               </div>
               <div class="form-group">
                 <label for="telephone">Téléphone <span style="color:var(--or);">*</span></label>
-                <input type="tel" id="telephone" name="telephone" required value="<?= htmlspecialchars($_POST['telephone'] ?? '') ?>">
+                <input type="tel" id="telephone" name="telephone" required value="<?= htmlspecialchars($_POST['telephone'] ?? $_pre['telephone']) ?>">
               </div>
               <div class="form-group full">
                 <label for="email">Email <span style="color:var(--or);">*</span></label>
-                <input type="email" id="email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>">
+                <input type="email" id="email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? $_pre['email']) ?>">
               </div>
               <div class="form-group full">
                 <label for="message">Votre message</label>
-                <textarea id="message" name="message" rows="4" placeholder="Nombre de passagers, bagages, numéro de vol/train, besoins particuliers…"><?= htmlspecialchars($_POST['message'] ?? '') ?></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Nombre de passagers, bagages, numéro de vol/train, besoins particuliers…"><?= htmlspecialchars($_POST['message'] ?? $_pre['message']) ?></textarea>
               </div>
             </div>
             <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:var(--s3);">

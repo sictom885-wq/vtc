@@ -218,14 +218,30 @@ endforeach;
     </div>
 
     <!-- Switcher langues -->
+    <?php
+    /* Construire les URLs du switcher vers la page équivalente */
+    $_self = $_SERVER['PHP_SELF'] ?? '/index.php';
+    // Extraire le slug (nom du fichier sans extension)
+    $_basename = basename($_self); // ex: transferts-aeroport.php
+    if($_basename === 'index.php' || $_basename === '') $_basename = 'index.php';
+    // Supprimer le préfixe /en/ ou /de/ du chemin
+    $_path = $_self;
+    $_slug = $_basename; // fichier seul
+
+    $_lang_urls = [
+      'fr' => '/' . ($_slug === 'index.php' ? '' : $_slug),
+      'en' => '/en/' . ($_slug === 'index.php' ? '' : $_slug),
+      'de' => '/de/' . ($_slug === 'index.php' ? '' : $_slug),
+    ];
+    ?>
     <div class="lang-switcher">
-      <a href="/" class="<?= $lang==='fr'?'active':'' ?>">
+      <a href="<?= $_lang_urls['fr'] ?>" class="<?= $lang==='fr'?'active':'' ?>">
         <span>🇫🇷</span> FR
       </a>
-      <a href="/en/" class="<?= $lang==='en'?'active':'' ?>">
+      <a href="<?= $_lang_urls['en'] ?>" class="<?= $lang==='en'?'active':'' ?>">
         <span>🇬🇧</span> EN
       </a>
-      <a href="/de/" class="<?= $lang==='de'?'active':'' ?>">
+      <a href="<?= $_lang_urls['de'] ?>" class="<?= $lang==='de'?'active':'' ?>">
         <span>🇩🇪</span> DE
       </a>
     </div>

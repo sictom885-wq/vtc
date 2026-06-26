@@ -62,25 +62,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (a.getAttribute('href') === currentPath) a.classList.add('active');
   });
 
-  /* --- Formulaire réservation --- */
+  /* --- Formulaire réservation index → redirige vers contact.php --- */
   const formResa = document.getElementById('form-reservation');
   formResa?.addEventListener('submit', e => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(formResa));
-    // Construit le mailto avec les données
-    const subject = encodeURIComponent(`Demande de réservation VTC — ${data.depart || ''} → ${data.arrivee || ''}`);
-    const body = encodeURIComponent(
-      `Départ : ${data.depart || 'N/A'}\n` +
-      `Arrivée : ${data.arrivee || 'N/A'}\n` +
-      `Date : ${data.date || 'N/A'}\n` +
-      `Heure : ${data.heure || 'N/A'}\n` +
-      `Aller/retour : ${data.allerretour ? 'Oui' : 'Non'}\n` +
-      `Nom : ${data.nom || 'N/A'}\n` +
-      `Téléphone : ${data.telephone || 'N/A'}\n` +
-      `Email : ${data.email || 'N/A'}\n` +
-      `Message : ${data.message || ''}`
-    );
-    window.location.href = `mailto:contact@audevtc.fr?subject=${subject}&body=${body}`;
+    // Construire les query params pour pré-remplir le formulaire contact
+    const params = new URLSearchParams({
+      depart:    data.depart    || '',
+      arrivee:   data.arrivee   || '',
+      date:      data.date      || '',
+      heure:     data.heure     || '',
+      nom:       data.nom       || '',
+      telephone: data.telephone || '',
+      email:     data.email     || '',
+      message:   data.message   || '',
+    });
+    if (data.allerretour) params.set('allerretour', '1');
+    window.location.href = '/contact.php?' + params.toString();
   });
 
   /* --- Carrousel avis (swipe mobile) --- */
