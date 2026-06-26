@@ -1517,8 +1517,8 @@ img:not([src]) {
 
 /* ===== Logo image ===== */
 .logo img {
-  height: 160px;
-  width: 160px;
+  height: 52px;
+  width: 52px;
   object-fit: contain;
   transition: opacity .2s ease, transform .2s ease;
   border-radius: 50%;
