@@ -656,6 +656,51 @@ function vtc_t(string $lang = 'fr'): array {
                               'en'=>'Tailor-made tours or custom itineraries: tell us your wishes, Michel Richard builds your programme — stops, pace, language. Anything is possible.',
                               'de'=>'Maßgeschneiderte Touren oder individuelle Reiseprogramme: Teilen Sie uns Ihre Wünsche mit, Michel Richard gestaltet Ihr Programm — Stopps, Tempo, Sprache. Alles ist möglich.'],
 
+
+    /* ===== MENTIONS LÉGALES ===== */
+    'ml_meta_title'  => ['fr'=>'Mentions Légales — AUDE VTC','en'=>'Legal Notice — AUDE VTC','de'=>'Impressum — AUDE VTC'],
+    'ml_meta_desc'   => ['fr'=>'Mentions légales du site audevtc.fr — AUDE VTC, chauffeur privé à Carcassonne.','en'=>'Legal notice for audevtc.fr — AUDE VTC, private chauffeur in Carcassonne.','de'=>'Impressum von audevtc.fr — AUDE VTC, Privatchauffeur in Carcassonne.'],
+    'ml_eyebrow'     => ['fr'=>'Informations légales','en'=>'Legal information','de'=>'Rechtliche Hinweise'],
+    'ml_h1_a'        => ['fr'=>'Mentions','en'=>'Legal','de'=>'Rechtliche'],
+    'ml_h1_b'        => ['fr'=>'Légales','en'=>'Notice','de'=>'Hinweise'],
+    'ml_s1_title'    => ['fr'=>'Éditeur du site','en'=>'Site publisher','de'=>'Herausgeber'],
+    'ml_s1_body'     => ['fr'=>'<strong>Raison sociale :</strong> Occitanie in Private<br><strong>Responsable de publication :</strong> Michel Richard<br><strong>Adresse :</strong> Carcassonne, Aude (11), France<br><strong>Téléphone :</strong> <a href="tel:+33610082007" style="color:var(--or);">06 10 08 20 07</a><br><strong>Email :</strong> <a href="mailto:contact@audevtc.fr" style="color:var(--or);">contact@audevtc.fr</a><br><strong>Site web :</strong> www.audevtc.fr',
+                         'en'=>'<strong>Company name:</strong> Occitanie in Private<br><strong>Publication manager:</strong> Michel Richard<br><strong>Address:</strong> Carcassonne, Aude (11), France<br><strong>Phone:</strong> <a href="tel:+33610082007" style="color:var(--or);">+33 6 10 08 20 07</a><br><strong>Email:</strong> <a href="mailto:contact@audevtc.fr" style="color:var(--or);">contact@audevtc.fr</a><br><strong>Website:</strong> www.audevtc.fr',
+                         'de'=>'<strong>Firmenname:</strong> Occitanie in Private<br><strong>Verantwortlich für den Inhalt:</strong> Michel Richard<br><strong>Adresse:</strong> Carcassonne, Aude (11), Frankreich<br><strong>Telefon:</strong> <a href="tel:+33610082007" style="color:var(--or);">+33 6 10 08 20 07</a><br><strong>E-Mail:</strong> <a href="mailto:contact@audevtc.fr" style="color:var(--or);">contact@audevtc.fr</a><br><strong>Website:</strong> www.audevtc.fr'],
+    'ml_s2_title'    => ['fr'=>'Hébergement','en'=>'Hosting','de'=>'Hosting'],
+    'ml_s2_body'     => ['fr'=>'<strong>Hébergeur :</strong> Hostinger International Ltd<br><strong>Adresse :</strong> 61 Lordou Vironos Street, 6023 Larnaca, Chypre<br><strong>Site :</strong> <a href="https://www.hostinger.fr" target="_blank" rel="noopener" style="color:var(--or);">www.hostinger.fr</a>',
+                         'en'=>'<strong>Host:</strong> Hostinger International Ltd<br><strong>Address:</strong> 61 Lordou Vironos Street, 6023 Larnaca, Cyprus<br><strong>Site:</strong> <a href="https://www.hostinger.com" target="_blank" rel="noopener" style="color:var(--or);">www.hostinger.com</a>',
+                         'de'=>'<strong>Hoster:</strong> Hostinger International Ltd<br><strong>Adresse:</strong> 61 Lordou Vironos Street, 6023 Larnaca, Zypern<br><strong>Website:</strong> <a href="https://www.hostinger.de" target="_blank" rel="noopener" style="color:var(--or);">www.hostinger.de</a>'],
+    'ml_s3_title'    => ['fr'=>'Propriété intellectuelle','en'=>'Intellectual property','de'=>'Urheberrecht'],
+    'ml_s3_body'     => ['fr'=>'Le présent site et l\'ensemble de son contenu (textes, images, graphismes, logo, icônes, sons, logiciels…) sont protégés par le droit d\'auteur. Toute reproduction, copie, modification ou diffusion, même partielle, est interdite sans l\'accord écrit préalable d\'Occitanie in Private, conformément à l\'article L.122-4 du Code de la propriété intellectuelle.',
+                         'en'=>'This site and all its content (text, images, graphics, logo, icons, sounds, software…) are protected by copyright. Any reproduction, copy, modification or distribution, even partial, is prohibited without the prior written consent of Occitanie in Private, in accordance with article L.122-4 of the French Intellectual Property Code.',
+                         'de'=>'Diese Website und ihr gesamter Inhalt (Texte, Bilder, Grafiken, Logo, Icons, Töne, Software…) sind urheberrechtlich geschützt. Jede auch teilweise Vervielfältigung, Kopie, Änderung oder Verbreitung ist ohne vorherige schriftliche Zustimmung von Occitanie in Private gemäß Artikel L.122-4 des französischen Urheberrechtsgesetzes untersagt.'],
+    'ml_s4_title'    => ['fr'=>'Données personnelles','en'=>'Personal data','de'=>'Personenbezogene Daten'],
+    'ml_s4_body'     => ['fr'=>'Les informations collectées via les formulaires du site sont destinées exclusivement à AUDE VTC pour le traitement de vos demandes de réservation. Elles ne sont pas transmises à des tiers.<br><br>Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez d\'un droit d\'accès, de rectification et de suppression de vos données. Pour exercer ce droit, contactez : <a href="mailto:contact@audevtc.fr" style="color:var(--or);">contact@audevtc.fr</a>',
+                         'en'=>'Information collected via the site\'s forms is intended exclusively for AUDE VTC to process your booking requests. It is not shared with third parties.<br><br>In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectify and delete your data. To exercise this right, contact: <a href="mailto:contact@audevtc.fr" style="color:var(--or);">contact@audevtc.fr</a>',
+                         'de'=>'Die über die Formulare der Website erhobenen Daten sind ausschließlich für AUDE VTC zur Bearbeitung Ihrer Buchungsanfragen bestimmt. Sie werden nicht an Dritte weitergegeben.<br><br>Gemäß der Datenschutz-Grundverordnung (DSGVO) haben Sie das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten. Zur Ausübung dieses Rechts wenden Sie sich an: <a href="mailto:contact@audevtc.fr" style="color:var(--or);">contact@audevtc.fr</a>'],
+    'ml_s5_title'    => ['fr'=>'Cookies','en'=>'Cookies','de'=>'Cookies'],
+    'ml_s5_body'     => ['fr'=>'Ce site n\'utilise pas de cookies publicitaires ou de traçage. Seuls des cookies techniques strictement nécessaires au fonctionnement du site peuvent être déposés.',
+                         'en'=>'This site does not use advertising or tracking cookies. Only technical cookies strictly necessary for the site to function may be stored.',
+                         'de'=>'Diese Website verwendet keine Werbe- oder Tracking-Cookies. Es werden nur technische Cookies gespeichert, die für den Betrieb der Website unbedingt erforderlich sind.'],
+    'ml_s6_title'    => ['fr'=>'Droit applicable','en'=>'Applicable law','de'=>'Anwendbares Recht'],
+    'ml_s6_body'     => ['fr'=>'Tout litige relatif à l\'utilisation du site audevtc.fr est soumis au droit français. Attribution exclusive de juridiction aux tribunaux compétents du ressort de Carcassonne.',
+                         'en'=>'Any dispute relating to the use of the audevtc.fr site is subject to French law. Exclusive jurisdiction is granted to the competent courts of Carcassonne.',
+                         'de'=>'Jeder Streit im Zusammenhang mit der Nutzung der Website audevtc.fr unterliegt französischem Recht. Ausschließlicher Gerichtsstand sind die zuständigen Gerichte von Carcassonne.'],
+    'ml_s7_title'    => ['fr'=>'Réalisation','en'=>'Design & development','de'=>'Umsetzung'],
+    'ml_s7_body'     => ['fr'=>'Site réalisé par <a href="https://sicilio.digital" target="_blank" rel="noopener" style="color:var(--or);">Sicilio Digital</a>.',
+                         'en'=>'Site built by <a href="https://sicilio.digital" target="_blank" rel="noopener" style="color:var(--or);">Sicilio Digital</a>.',
+                         'de'=>'Website erstellt von <a href="https://sicilio.digital" target="_blank" rel="noopener" style="color:var(--or);">Sicilio Digital</a>.'],
+
+    /* ===== 404 ===== */
+    'nf_meta_title'  => ['fr'=>'Page introuvable — AUDE VTC','en'=>'Page not found — AUDE VTC','de'=>'Seite nicht gefunden — AUDE VTC'],
+    'nf_meta_desc'   => ['fr'=>'Cette page n\'existe pas. Retournez à l\'accueil AUDE VTC.','en'=>'This page does not exist. Return to the AUDE VTC home page.','de'=>'Diese Seite existiert nicht. Zurück zur AUDE VTC Startseite.'],
+    'nf_h1_a'        => ['fr'=>'Page','en'=>'Page','de'=>'Seite'],
+    'nf_h1_b'        => ['fr'=>'introuvable','en'=>'not found','de'=>'nicht gefunden'],
+    'nf_text'        => ['fr'=>'Cette page n\'existe pas ou a été déplacée. Retournez à l\'accueil pour trouver ce dont vous avez besoin.','en'=>'This page does not exist or has been moved. Return to the home page to find what you need.','de'=>'Diese Seite existiert nicht oder wurde verschoben. Kehren Sie zur Startseite zurück, um das Gewünschte zu finden.'],
+    'nf_cta_home'    => ['fr'=>'Retour à l\'accueil','en'=>'Back to home','de'=>'Zurück zur Startseite'],
+    'nf_cta_contact' => ['fr'=>'Nous contacter','en'=>'Contact us','de'=>'Kontakt'],
+
     ]; // fin $strings
 
     $result = [];
