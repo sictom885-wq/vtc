@@ -47,11 +47,11 @@ $year = date('Y');
       <div class="footer-col">
         <h4>Destinations</h4>
         <ul class="footer-links">
-          <li><a href="#">Toulouse Blagnac</a></li>
-          <li><a href="#">Aéroport Carcassonne</a></li>
-          <li><a href="#">Montpellier</a></li>
-          <li><a href="#">Perpignan</a></li>
-          <li><a href="#">Bordeaux Mérignac</a></li>
+          <li><a href="/destinations/vtc-carcassonne-toulouse-blagnac.php">Toulouse Blagnac</a></li>
+          <li><a href="/destinations/vtc-aeroport-carcassonne.php">Aéroport Carcassonne</a></li>
+          <li><a href="/destinations/vtc-carcassonne-montpellier.php">Montpellier</a></li>
+          <li><a href="/destinations/vtc-carcassonne-perpignan.php">Perpignan</a></li>
+          <li><a href="/destinations/vtc-carcassonne-bordeaux.php">Bordeaux Mérignac</a></li>
         </ul>
       </div>
 
