@@ -163,7 +163,7 @@ include 'includes/icons.php';
       <div class="apropos-img-wrap reveal">
         <img src="/assets/images/chauffeur-hero.webp"
              alt="Michel Richard, chauffeur AUDE VTC devant sa Mercedes hybride"
-             width="540" height="680" loading="lazy">
+             width="540" height="680" loading="lazy" decoding="async">
         <div class="apropos-badge">
           <span class="badge-num">+5</span>
           <span class="badge-label">ans d'expérience</span>
@@ -228,7 +228,7 @@ include 'includes/icons.php';
       <!-- Aéroports -->
       <div class="presta-card reveal reveal-delay-1">
         <div class="presta-img">
-          <img src="/assets/images/card-aeroport.webp" alt="Transfert aéroport VTC Carcassonne" width="800" height="600" loading="lazy">
+          <img src="/assets/images/card-aeroport.webp" alt="Transfert aéroport VTC Carcassonne" width="800" height="600" loading="lazy" decoding="async">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
@@ -253,7 +253,7 @@ include 'includes/icons.php';
       <!-- Gares -->
       <div class="presta-card reveal reveal-delay-2">
         <div class="presta-img">
-          <img src="/assets/images/card-gare.webp" alt="Transfert gare VTC Carcassonne" width="800" height="600" loading="lazy">
+          <img src="/assets/images/card-gare.webp" alt="Transfert gare VTC Carcassonne" width="800" height="600" loading="lazy" decoding="async">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">
@@ -277,7 +277,7 @@ include 'includes/icons.php';
       <!-- Tourisme & Événements -->
       <div class="presta-card reveal reveal-delay-3">
         <div class="presta-img">
-          <img src="/assets/images/card-tourisme.webp" alt="Tourisme Occitanie VTC privé" width="800" height="600" loading="lazy">
+          <img src="/assets/images/card-tourisme.webp" alt="Tourisme Occitanie VTC privé" width="800" height="600" loading="lazy" decoding="async">
           <div class="presta-img-overlay"></div>
         </div>
         <div class="presta-body">

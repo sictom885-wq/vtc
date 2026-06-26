@@ -1455,3 +1455,43 @@ body:not(.scrolled-past-topbar) #header {
 @media (max-width: 768px) {
   .whatsapp-btn { bottom: 5.5rem; right: 1rem; width: 50px; height: 50px; }
 }
+
+/* ===== Core Web Vitals — CLS prevention ===== */
+img { max-width: 100%; height: auto; }
+.avis-card img, .presta-card img { aspect-ratio: 1; }
+
+/* Réduire layout shifts sur les cards */
+.presta-card, .avis-card, .card-hover {
+  contain: layout style;
+}
+
+/* Stabiliser les hero sections */
+.hero-section, [style*="hero-bg"] {
+  content-visibility: auto;
+}
+
+/* Optimiser les animations reveal */
+.reveal {
+  will-change: opacity, transform;
+}
+.reveal.visible {
+  will-change: auto;
+}
+
+/* ===== CLS prevention — dimensions explicites ===== */
+.avis-avatar { width: 40px; height: 40px; flex-shrink: 0; }
+.logo-name { display: inline-block; }
+
+/* Hero sections : hauteur minimale pour éviter le reflow */
+[style*="padding:var(--s12)"] { min-height: 280px; }
+
+/* Skeleton pour les images en chargement */
+img:not([src]) {
+  background: rgba(201,168,76,.05);
+  border-radius: var(--radius-lg);
+}
+
+/* Optimisation paint : isolation des composants animés */
+.presta-card, .avis-card, .reveal {
+  isolation: isolate;
+}

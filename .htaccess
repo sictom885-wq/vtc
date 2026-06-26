@@ -61,3 +61,16 @@ DirectoryIndex index.php index.html
 
 # --- Page erreur 404 custom (à créer) ---
 ErrorDocument 404 /404.php
+
+# --- Cache immutable pour assets versionnés ---
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|woff2|woff)$">
+    Header set Cache-Control "max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.css$">
+    Header set Cache-Control "max-age=2592000, stale-while-revalidate=86400"
+  </FilesMatch>
+  <FilesMatch "\.js$">
+    Header set Cache-Control "max-age=2592000, stale-while-revalidate=86400"
+  </FilesMatch>
+</IfModule>

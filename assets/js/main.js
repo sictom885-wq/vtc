@@ -96,4 +96,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+
+  /* --- Lazy loading images background --- */
+  const lazyBgs = document.querySelectorAll('[data-bg]');
+  if (lazyBgs.length && 'IntersectionObserver' in window) {
+    const bgIO = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.backgroundImage = `url(${entry.target.dataset.bg})`;
+          bgIO.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '200px' });
+    lazyBgs.forEach(el => bgIO.observe(el));
+  }
+
+  /* --- Optimisation INP : defer non-critical interactions --- */
+  if ('scheduler' in window && 'postTask' in window.scheduler) {
+    window.scheduler.postTask(() => {
+      document.querySelectorAll('.card-hover').forEach(card => {
+        card.addEventListener('mouseenter', () => card.classList.add('hovered'), { passive: true });
+        card.addEventListener('mouseleave', () => card.classList.remove('hovered'), { passive: true });
+      });
+    }, { priority: 'background' });
+  }
+
 });
