@@ -105,4 +105,22 @@ $faq_ville=[
 <?php endforeach; ?>
 ]}
 </script>
+
+<!-- Vous recherchez aussi -->
+<section class="section section--dark">
+  <div class="container" style="max-width:800px;margin-inline:auto;">
+    <div class="reveal" style="margin-bottom:var(--s3);">
+      <span class="eyebrow">Vous recherchez aussi</span>
+      <span class="gold-line"></span>
+      <h2 class="section-title" style="font-size:1.6rem;">Destinations <span>similaires</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--s2);margin-top:var(--s4);">
+      <a href="/destinations/vtc-carcassonne-toulouse-blagnac.php" style="display:block;background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.12);border-radius:var(--radius-lg);padding:var(--s2) var(--s3);text-decoration:none;color:var(--or);font-size:.88rem;text-align:center;" onmouseover="this.style.borderColor='rgba(201,168,76,.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,.12)'">Toulouse Blagnac →</a>
+      <a href="/destinations/vtc-gare-toulouse.php" style="display:block;background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.12);border-radius:var(--radius-lg);padding:var(--s2) var(--s3);text-decoration:none;color:var(--or);font-size:.88rem;text-align:center;" onmouseover="this.style.borderColor='rgba(201,168,76,.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,.12)'">Gare Toulouse →</a>
+      <a href="/villes/vtc-bram.php" style="display:block;background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.12);border-radius:var(--radius-lg);padding:var(--s2) var(--s3);text-decoration:none;color:var(--or);font-size:.88rem;text-align:center;" onmouseover="this.style.borderColor='rgba(201,168,76,.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,.12)'">Bram →</a>
+      <a href="/transferts-aeroport.php" style="display:block;background:rgba(201,168,76,.05);border:1px solid rgba(201,168,76,.12);border-radius:var(--radius-lg);padding:var(--s2) var(--s3);text-decoration:none;color:var(--or);font-size:.88rem;text-align:center;" onmouseover="this.style.borderColor='rgba(201,168,76,.4)'" onmouseout="this.style.borderColor='rgba(201,168,76,.12)'">Aéroports →</a>
+    </div>
+  </div>
+</section>
+
 <?php include '../includes/footer.php'; ?>
