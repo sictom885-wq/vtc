@@ -1498,3 +1498,13 @@ img:not([src]) {
 .avis-card, .reveal {
   isolation: isolate;
 }
+
+/* ===== Espacement h3 sections éditoriales ===== */
+.section .reveal h3,
+.section--dark .reveal h3 {
+  margin-top: var(--s4);
+}
+.section .reveal:first-child h3,
+.section--dark .reveal:first-child h3 {
+  margin-top: 0;
+}
